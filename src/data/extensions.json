@@ -1,0 +1,23 @@
+[
+  {
+    "symbol": "MYL4",
+    "panels": [],
+    "added": false,
+    "catalogAddition": true,
+    "name": "myosin light chain 4",
+    "hgncId": "HGNC:7585",
+    "ncbiId": "4635",
+    "aliases": [
+      "ALC1",
+      "AMLC",
+      "GT1",
+      "PRO1957"
+    ],
+    "inheritance": "AD / AR; variant-dependent",
+    "phenotypes": "Early-onset AF;Atrial cardiomyopathy;Conduction disease",
+    "relevance": "Atrial myosin light chain helps maintain atrial contraction and structure. Selected MYL4 variants cause atrial myopathy with early-onset atrial fibrillation or conduction disease. Dominant and recessive disease mechanisms have been described.",
+    "consideration": "Distinguish selected dominant missense variants from biallelic loss-of-function disease. Confirm zygosity, phase, and phenotype; one recessive allele does not establish a diagnosis.",
+    "reference": "myl4",
+    "caution": "AF extension beyond the source PDF. Variant-specific familial evidence is not a blanket pathogenicity rule for all MYL4 variants."
+  }
+]

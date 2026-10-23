@@ -1,0 +1,886 @@
+{
+  "reviewed": "2026-10-23",
+  "scope": "Selected source-linked syndrome teaching associations; clue strength is qualitative, not a validated diagnostic score.",
+  "syndromes": [
+    {
+      "id": "naxos",
+      "name": "Naxos disease",
+      "genes": [
+        "JUP"
+      ],
+      "cue": "external",
+      "groups": [
+        "cardiocutaneous",
+        "hair-skin",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "woolly hair",
+        "wooly hair",
+        "curly hair",
+        "palmoplantar keratoderma",
+        "thick palms",
+        "thick soles",
+        "cardiocutaneous",
+        "Naxos syndrome"
+      ],
+      "clues": [
+        {
+          "text": "Woolly hair together with palmoplantar keratoderma",
+          "strength": "characteristic",
+          "kind": "visible"
+        },
+        {
+          "text": "Curly hair alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Arrhythmogenic cardiomyopathy, often right ventricular, with ventricular arrhythmia and sudden-death risk.",
+      "inheritance": "Classic Naxos: autosomal recessive, biallelic JUP pathogenic variants.",
+      "testing": [
+        "JUP testing and phase assessment; ECG, rhythm monitoring and cardiac imaging."
+      ],
+      "gaps": [
+        "Confirm the laboratory's sequence and copy-number coverage."
+      ],
+      "caveats": [
+        "Hair and skin findings may precede cardiac disease. A single JUP finding does not establish Naxos; other JUP disease contexts exist."
+      ],
+      "sources": [
+        {
+          "title": "MedlinePlus Genetics · hair, skin and gene mapping",
+          "url": "https://medlineplus.gov/genetics/condition/keratoderma-with-woolly-hair/",
+          "sections": "Description, Causes, Inheritance"
+        },
+        {
+          "title": "GeneReviews · JUP inheritance and cardiac evaluation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1131/",
+          "sections": "Genetic causes, Table 2; evaluation strategy"
+        }
+      ],
+      "mechanism": "JUP encodes plakoglobin, part of the desmosomes that hold heart and skin cells together. Biallelic disease can therefore link woolly hair and keratoderma with arrhythmogenic cardiomyopathy."
+    },
+    {
+      "id": "carvajal",
+      "name": "Carvajal syndrome",
+      "genes": [
+        "DSP"
+      ],
+      "cue": "external",
+      "groups": [
+        "cardiocutaneous",
+        "hair-skin",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "woolly hair",
+        "wooly hair",
+        "curly hair",
+        "palmoplantar keratoderma",
+        "thick palms",
+        "thick soles",
+        "cardiocutaneous",
+        "Carvajal Huerta",
+        "Carvajal-Huerta syndrome"
+      ],
+      "clues": [
+        {
+          "text": "Woolly hair together with palmoplantar keratoderma",
+          "strength": "characteristic",
+          "kind": "visible"
+        },
+        {
+          "text": "Curly hair alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Dilated / left-predominant cardiomyopathy, heart failure and ventricular arrhythmia risk.",
+      "inheritance": "Classic Carvajal: autosomal recessive, biallelic DSP pathogenic variants.",
+      "testing": [
+        "DSP testing and phase assessment; ECG, rhythm monitoring and cardiac imaging."
+      ],
+      "gaps": [
+        "Confirm the laboratory's sequence and copy-number coverage."
+      ],
+      "caveats": [
+        "Monoallelic DSP cardiomyopathy is a separate context and need not have this hair–skin pattern. The badge does not assign Carvajal to every DSP variant."
+      ],
+      "sources": [
+        {
+          "title": "MedlinePlus Genetics · Carvajal phenotype and DSP",
+          "url": "https://medlineplus.gov/genetics/condition/keratoderma-with-woolly-hair/",
+          "sections": "Description, Causes, Inheritance"
+        },
+        {
+          "title": "GeneReviews · DSP and cardiac evaluation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1131/",
+          "sections": "Genetic causes, Table 2; evaluation strategy"
+        }
+      ],
+      "mechanism": "DSP encodes desmoplakin, which anchors desmosomes to the cell cytoskeleton. Biallelic disease can affect skin, hair and myocardium; monoallelic DSP cardiomyopathy is a separate context."
+    },
+    {
+      "id": "loeys-dietz",
+      "name": "Loeys–Dietz syndrome",
+      "genes": [
+        "TGFBR1",
+        "TGFBR2",
+        "SMAD2",
+        "SMAD3",
+        "TGFB2",
+        "TGFB3"
+      ],
+      "cue": "external",
+      "groups": [
+        "aortic",
+        "palate-skeletal",
+        "skin-fragility"
+      ],
+      "keywords": [
+        "Loeys Dietz",
+        "LDS",
+        "bifid uvula",
+        "cleft palate",
+        "hypertelorism",
+        "widely spaced eyes",
+        "pectus",
+        "arachnodactyly",
+        "translucent skin",
+        "bruising",
+        "aortic aneurysm",
+        "aortic dissection",
+        "heritable thoracic aortic disease",
+        "HTAD"
+      ],
+      "clues": [
+        {
+          "text": "Bifid uvula / cleft palate with widely spaced eyes",
+          "strength": "characteristic",
+          "kind": "examination"
+        },
+        {
+          "text": "Pectus deformity, long fingers, translucent skin or easy bruising",
+          "strength": "supportive",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Aortic and other arterial aneurysms, tortuosity and dissection; disease may extend beyond the aortic root.",
+      "inheritance": "These six Priority 1 genes: autosomal dominant, disease-relevant heterozygous pathogenic variants.",
+      "testing": [
+        "Clinical genetics assessment, echocardiography and arterial imaging; phenotype-directed HTAD testing."
+      ],
+      "gaps": [
+        "Confirm sequence and deletion/duplication coverage with the laboratory."
+      ],
+      "caveats": [
+        "No single facial or palatal sign is diagnostic. Features vary across genes, ages and families; absence does not exclude LDS. Interpret the specific variant and mechanism, not the gene name alone."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Loeys–Dietz syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1133/",
+          "sections": "Summary; diagnosis/testing; molecular genetics"
+        }
+      ],
+      "mechanism": "These genes participate in TGF-beta signaling and vascular / connective-tissue biology. Disease-associated variants can link craniofacial and skeletal findings with arterial disease; manifestations differ by gene and variant."
+    },
+    {
+      "id": "marfan",
+      "name": "Marfan syndrome",
+      "genes": [
+        "FBN1"
+      ],
+      "cue": "external",
+      "groups": [
+        "aortic",
+        "palate-skeletal",
+        "eye"
+      ],
+      "keywords": [
+        "arachnodactyly",
+        "long fingers",
+        "long limbs",
+        "pectus",
+        "scoliosis",
+        "tall",
+        "marfanoid",
+        "ectopia lentis",
+        "lens dislocation",
+        "aortic aneurysm",
+        "aortic dissection",
+        "heritable thoracic aortic disease",
+        "HTAD"
+      ],
+      "clues": [
+        {
+          "text": "Ectopia lentis (lens displacement)",
+          "strength": "characteristic",
+          "kind": "examination"
+        },
+        {
+          "text": "Long fingers / limbs with pectus deformity or scoliosis",
+          "strength": "supportive",
+          "kind": "visible"
+        },
+        {
+          "text": "Tall stature alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Aortic root enlargement and dissection; mitral valve prolapse / regurgitation.",
+      "inheritance": "Autosomal dominant; a Marfan-associated FBN1 pathogenic variant in the appropriate clinical context.",
+      "testing": [
+        "Clinical diagnostic criteria, aortic root imaging and a dilated slit-lamp examination; FBN1 / HTAD testing."
+      ],
+      "gaps": [
+        "Ensure deletion/duplication analysis is available if sequence testing is unrevealing."
+      ],
+      "caveats": [
+        "Ectopia lentis needs an eye examination and also has other causes. FBN1 has several allelic disorders; tall stature or an FBN1 VUS does not establish Marfan syndrome."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · FBN1-related Marfan syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1335/",
+          "sections": "Diagnosis/testing; allelic disorders; recommended evaluations"
+        }
+      ],
+      "mechanism": "FBN1 encodes fibrillin-1, a component of connective-tissue microfibrils. Disease can involve the aortic wall, skeletal proportions and the supporting structures of the lens."
+    },
+    {
+      "id": "vascular-eds",
+      "name": "Vascular Ehlers–Danlos syndrome",
+      "genes": [
+        "COL3A1"
+      ],
+      "cue": "external",
+      "groups": [
+        "aortic",
+        "skin-fragility"
+      ],
+      "keywords": [
+        "vascular EDS",
+        "vEDS",
+        "thin skin",
+        "translucent skin",
+        "visible veins",
+        "easy bruising",
+        "acrogeria",
+        "small joint hypermobility",
+        "clubfoot",
+        "aortic aneurysm",
+        "aortic dissection",
+        "heritable thoracic aortic disease",
+        "HTAD"
+      ],
+      "clues": [
+        {
+          "text": "Thin translucent skin, easy bruising and aged-appearing hands",
+          "strength": "supportive",
+          "kind": "visible"
+        },
+        {
+          "text": "Bruising or joint hypermobility alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Arterial dissection or rupture, sometimes without a preceding aneurysm; additional bowel and uterine fragility.",
+      "inheritance": "Usually autosomal dominant; heterozygous COL3A1 pathogenic variant.",
+      "testing": [
+        "COL3A1 molecular testing and specialist assessment; noninvasive arterial imaging as clinically indicated."
+      ],
+      "gaps": [
+        "If suspicion persists after negative sequencing, review deletion/duplication and splice / RNA assessment with a specialist laboratory."
+      ],
+      "caveats": [
+        "External signs can be subtle or absent. Generalized hypermobility alone is not a vEDS diagnosis. Fragility matters when planning invasive investigations."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · vascular Ehlers–Danlos syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1494/",
+          "sections": "Suggestive findings; molecular testing; management"
+        }
+      ],
+      "mechanism": "COL3A1 encodes type III collagen. Disease-associated variants can compromise the strength of skin, arterial walls and other hollow organs."
+    },
+    {
+      "id": "fh",
+      "name": "Familial hypercholesterolemia",
+      "genes": [
+        "LDLR",
+        "APOB",
+        "PCSK9",
+        "LDLRAP1"
+      ],
+      "cue": "external",
+      "groups": [
+        "xanthoma"
+      ],
+      "keywords": [
+        "FH",
+        "tendon xanthoma",
+        "Achilles xanthoma",
+        "xanthomas",
+        "corneal arcus",
+        "xanthelasma",
+        "yellow deposits"
+      ],
+      "clues": [
+        {
+          "text": "Tendon xanthomas, particularly Achilles or hand tendons",
+          "strength": "characteristic",
+          "kind": "examination"
+        },
+        {
+          "text": "Premature corneal arcus",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "Xanthelasma alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Premature coronary atherosclerosis; severe disease may involve the aortic valve / root.",
+      "inheritance": "LDLR / APOB / PCSK9: usually dominant; LDLRAP1: recessive, biallelic disease.",
+      "testing": [
+        "Lipid profile, family history and clinical FH assessment; exclude secondary causes and consider sitosterolemia. Use molecular confirmation when appropriate."
+      ],
+      "gaps": [
+        "Validate LDLR deletion/duplication detection; sequencing alone can miss relevant CNVs."
+      ],
+      "caveats": [
+        "Xanthomas also occur in other lipid disorders and may be absent in FH. PCSK9 gain-of-function and receptor-binding-defective APOB variants matter; other variants can lower cholesterol instead."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · familial hypercholesterolemia",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK174884/",
+          "sections": "Clinical characteristics; Table 1; mechanism of disease causation"
+        }
+      ],
+      "mechanism": "These genes affect LDL clearance. Disease-causing mechanisms can produce cholesterol accumulation in tendons and arteries; the direction of the variant effect matters."
+    },
+    {
+      "id": "sitosterolemia",
+      "name": "Sitosterolemia",
+      "genes": [
+        "ABCG5",
+        "ABCG8"
+      ],
+      "cue": "external",
+      "groups": [
+        "xanthoma"
+      ],
+      "keywords": [
+        "phytosterolemia",
+        "plant sterols",
+        "sitosterol",
+        "campesterol",
+        "childhood xanthomas",
+        "tendon xanthoma",
+        "xanthomas",
+        "hemolysis",
+        "macrothrombocytopenia"
+      ],
+      "clues": [
+        {
+          "text": "Childhood tendon / tuberous xanthomas, including unusual sites",
+          "strength": "supportive",
+          "kind": "visible"
+        },
+        {
+          "text": "Xanthomas alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Premature atherosclerosis, coronary events and possible aortic valve involvement.",
+      "inheritance": "Autosomal recessive; usually biallelic pathogenic variants in ABCG5 or ABCG8.",
+      "testing": [
+        "Dedicated plasma sitosterol / campesterol analysis (GC-MS or LC-MS/MS); ABCG5 / ABCG8 testing. CBC / blood film may show hemolysis or large-platelet thrombocytopenia."
+      ],
+      "gaps": [
+        "A routine lipid profile does not measure plant sterols."
+      ],
+      "caveats": [
+        "Appearance overlaps FH; LDL-C alone cannot distinguish them. Diet, infant feeding, ezetimibe and bile acid resins can affect sterol results. Interpret with the laboratory and medication history."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · sitosterolemia",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK131810/",
+          "sections": "Suggestive findings; plasma plant sterol measurement and false negatives"
+        }
+      ],
+      "mechanism": "ABCG5 and ABCG8 form a sterol transporter. Biallelic dysfunction can impair plant-sterol elimination, linking sterol accumulation with xanthomas and vascular disease."
+    },
+    {
+      "id": "fabry",
+      "name": "Fabry disease",
+      "genes": [
+        "GLA"
+      ],
+      "cue": "external",
+      "groups": [
+        "skin-lesions",
+        "eye",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "angiokeratoma",
+        "angiokeratomas",
+        "cornea verticillata",
+        "whorled cornea",
+        "hypohidrosis",
+        "acroparesthesia",
+        "burning hands feet",
+        "reduced sweating"
+      ],
+      "clues": [
+        {
+          "text": "Angiokeratomas with neuropathic pain / sweating abnormalities",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "Cornea verticillata",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "An isolated angiokeratoma",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "LVH / cardiomyopathy, conduction disease and arrhythmias; renal and cerebrovascular involvement may coexist.",
+      "inheritance": "X-linked; disease expression varies in both males and females.",
+      "testing": [
+        "Alpha-galactosidase A activity plus GLA molecular testing; lyso-Gb3 is supportive. Assess renal and cardiac involvement; slit-lamp examination for corneal changes."
+      ],
+      "gaps": [
+        "Normal enzyme activity does not exclude Fabry in females; molecular testing is needed."
+      ],
+      "caveats": [
+        "Late-onset cardiac disease may lack skin findings. Corneal whorls can have drug-related causes. Biomarkers and a VUS alone do not establish disease."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Fabry disease",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1292/",
+          "sections": "Diagnosis/testing; additional testing; differential diagnosis"
+        }
+      ],
+      "mechanism": "GLA encodes alpha-galactosidase A. Deficiency causes glycosphingolipid accumulation in multiple tissues, linking skin, nerve, kidney and cardiac manifestations."
+    },
+    {
+      "id": "danon",
+      "name": "Danon disease",
+      "genes": [
+        "LAMP2"
+      ],
+      "cue": "clinical",
+      "groups": [
+        "muscle-development",
+        "eye",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "proximal weakness",
+        "skeletal myopathy",
+        "muscle weakness",
+        "learning disability",
+        "retinopathy",
+        "pre-excitation",
+        "preexcitation"
+      ],
+      "clues": [
+        {
+          "text": "Proximal muscle weakness / motor delay with learning difficulties",
+          "strength": "supportive",
+          "kind": "history"
+        },
+        {
+          "text": "Retinopathy",
+          "strength": "supportive",
+          "kind": "examination"
+        }
+      ],
+      "cardiac": "Often severe, progressive HCM in males; HCM or DCM in females. Pre-excitation, conduction disease and arrhythmias can occur.",
+      "inheritance": "X-linked, usually LAMP2 loss-of-function disease; females can be substantially affected.",
+      "testing": [
+        "LAMP2 molecular testing; ECG / imaging, CK and neuromuscular, developmental and ophthalmic assessment."
+      ],
+      "gaps": [
+        "Include validated LAMP2 deletion/duplication analysis."
+      ],
+      "caveats": [
+        "There is no reliable distinctive external appearance. Weakness and learning difficulties are nonspecific; extracardiac findings may be mild or absent, especially in females. Do not exclude Danon by inspection."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Danon disease",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK554742/",
+          "sections": "Clinical description; suggestive findings; Table 1"
+        }
+      ],
+      "mechanism": "LAMP2 supports lysosomal and autophagic function. Loss of function can produce cardiac and skeletal myopathy with additional developmental or retinal involvement."
+    },
+    {
+      "id": "timothy",
+      "name": "Timothy syndrome",
+      "genes": [
+        "CACNA1C"
+      ],
+      "cue": "external",
+      "groups": [
+        "digits",
+        "muscle-development",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "syndactyly",
+        "webbed fingers",
+        "webbed toes",
+        "cutaneous syndactyly",
+        "developmental delay",
+        "long QT"
+      ],
+      "clues": [
+        {
+          "text": "Cutaneous syndactyly in a child with long QT",
+          "strength": "characteristic",
+          "kind": "examination"
+        },
+        {
+          "text": "Developmental differences or hypotonia",
+          "strength": "supportive",
+          "kind": "history"
+        },
+        {
+          "text": "Syndactyly alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Marked QT prolongation, ventricular arrhythmias and possible congenital heart disease / AV block.",
+      "inheritance": "Autosomal dominant, often de novo; Timothy-associated CACNA1C variants usually increase calcium current.",
+      "testing": [
+        "ECG / rhythm assessment and CACNA1C molecular testing with variant-specific interpretation."
+      ],
+      "gaps": [
+        "Check coverage of relevant alternative exons, including 8 / 8A; discuss suspected mosaicism with the laboratory."
+      ],
+      "caveats": [
+        "Timothy syndrome can occur without syndactyly. CACNA1C also causes other cardiac and neurodevelopmental phenotypes; not every variant causes Timothy syndrome."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · CACNA1C-related disorders",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1403/",
+          "sections": "Diagnosis/testing; genotype–phenotype correlations; genetic counseling"
+        }
+      ],
+      "mechanism": "Selected CACNA1C calcium-channel variants alter channel function. Their electrical and developmental effects can connect long QT with syndactyly and other systemic findings."
+    },
+    {
+      "id": "andersen-tawil",
+      "name": "Andersen–Tawil syndrome",
+      "genes": [
+        "KCNJ2"
+      ],
+      "cue": "external",
+      "groups": [
+        "digits",
+        "muscle-development",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "Andersen Tawil",
+        "ATS",
+        "clinodactyly",
+        "curved fifth finger",
+        "small mandible",
+        "low-set ears",
+        "syndactyly",
+        "periodic paralysis",
+        "episodic weakness",
+        "U waves"
+      ],
+      "clues": [
+        {
+          "text": "Small mandible, low-set ears or fifth-digit clinodactyly",
+          "strength": "supportive",
+          "kind": "visible"
+        },
+        {
+          "text": "Periodic paralysis alongside ventricular arrhythmia",
+          "strength": "characteristic",
+          "kind": "history"
+        },
+        {
+          "text": "An isolated minor facial / digital feature",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "cardiac": "Ventricular ectopy and bidirectional / polymorphic VT; prominent U waves and prolonged QU may occur.",
+      "inheritance": "Autosomal dominant; usually KCNJ2 loss-of-function disease.",
+      "testing": [
+        "ECG and ambulatory monitoring; potassium during weakness; KCNJ2 testing and specialist assessment."
+      ],
+      "gaps": [
+        "Consider KCNJ2 deletion/duplication analysis if sequence testing is negative and suspicion persists."
+      ],
+      "caveats": [
+        "The full triad need not be present. QU prolongation is not interchangeable with typical long QT. Other KCNJ2 mechanisms can cause different electrical phenotypes."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Andersen–Tawil syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1264/",
+          "sections": "Suggestive findings; molecular testing; clinical description"
+        }
+      ],
+      "mechanism": "KCNJ2 encodes the Kir2.1 potassium channel. Disease-associated dysfunction can affect cardiac and skeletal-muscle excitability alongside characteristic skeletal features."
+    },
+    {
+      "id": "jervell-lange-nielsen",
+      "name": "Jervell–Lange-Nielsen syndrome",
+      "genes": [
+        "KCNQ1",
+        "KCNE1"
+      ],
+      "cue": "clinical",
+      "groups": [
+        "hearing",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "Jervell Lange Nielsen",
+        "JLNS",
+        "congenital deafness",
+        "hearing loss",
+        "sensorineural hearing loss",
+        "deafness",
+        "long QT"
+      ],
+      "clues": [
+        {
+          "text": "Congenital bilateral sensorineural hearing loss with long QT",
+          "strength": "characteristic",
+          "kind": "history"
+        },
+        {
+          "text": "Hearing loss alone",
+          "strength": "nonspecific",
+          "kind": "history"
+        }
+      ],
+      "cardiac": "Long QT with torsades / ventricular fibrillation and sudden-death risk; severity varies, including between the two genes.",
+      "inheritance": "Autosomal recessive; biallelic loss-of-function pathogenic variants in KCNQ1 or in KCNE1.",
+      "testing": [
+        "Audiology, repeated ECG / QT assessment and molecular confirmation including phase of variants in the same gene."
+      ],
+      "gaps": [
+        "Review copy-number / second-allele detection if only one variant is found despite a strong phenotype."
+      ],
+      "caveats": [
+        "Hearing loss is a history / audiology clue, not visible anatomy. A single variant or one variant in each gene does not establish classic JLNS. Most hearing loss has other causes."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Jervell and Lange-Nielsen syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1405/",
+          "sections": "Summary; establishing the diagnosis; mode of inheritance (updated 15 Oct 2026)"
+        }
+      ],
+      "mechanism": "KCNQ1 and KCNE1 contribute to potassium-channel function in the heart and inner ear. Biallelic disease can link QT prolongation with congenital hearing loss."
+    },
+    {
+      "id": "noonan",
+      "name": "Noonan syndrome",
+      "genes": [
+        "PTPN11",
+        "RAF1",
+        "RIT1"
+      ],
+      "cue": "external",
+      "groups": [
+        "rasopathy",
+        "face-chest",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "RASopathy",
+        "webbed neck",
+        "widely spaced eyes",
+        "ptosis",
+        "low set ears",
+        "pectus",
+        "short stature",
+        "pulmonary valve stenosis"
+      ],
+      "clues": [
+        {
+          "text": "Facial pattern with widely spaced eyes / ptosis, webbed neck and chest deformity",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "Short stature or an isolated facial feature",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "mechanism": "These genes participate in RAS/MAPK signaling, which regulates development and growth. Disease effects depend on the gene and variant.",
+      "cardiac": "Pulmonary valve stenosis and HCM. HCM is particularly associated with RAF1 and RIT1; classic PTPN11-related Noonan more often involves pulmonary stenosis.",
+      "inheritance": "These catalog genes: autosomal dominant; disease-associated heterozygous variants.",
+      "testing": [
+        "Clinical genetics assessment, ECG / echocardiography and phenotype-directed RASopathy testing."
+      ],
+      "gaps": [
+        "Only three Noonan genes are represented here; this is not a complete RASopathy panel."
+      ],
+      "caveats": [
+        "Features change with age. RIT1-related disease may lack short stature or pectus findings. PTPN11 variant-specific Noonan with multiple lentigines is a separate entry; a VUS does not diagnose either condition."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Noonan syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1124/",
+          "sections": "Clinical characteristics; phenotype correlations by gene; molecular genetics"
+        }
+      ]
+    },
+    {
+      "id": "noonan-lentigines",
+      "name": "Noonan syndrome with multiple lentigines",
+      "genes": [
+        "PTPN11",
+        "RAF1"
+      ],
+      "cue": "external",
+      "groups": [
+        "rasopathy",
+        "pigmentation",
+        "face-chest",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "NSML",
+        "LEOPARD syndrome",
+        "lentigines",
+        "lentiginosis",
+        "dark skin spots",
+        "widely spaced eyes",
+        "ptosis",
+        "pectus",
+        "sensorineural hearing loss"
+      ],
+      "clues": [
+        {
+          "text": "Multiple lentigines with Noonan-like facial / chest features",
+          "strength": "characteristic",
+          "kind": "examination"
+        },
+        {
+          "text": "Widely spaced eyes, ptosis or short stature",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "Pigmented skin spots alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "mechanism": "Disease-associated PTPN11 or RAF1 variants alter growth signaling. Interpret the specific variant; the cardiac profile differs from classic PTPN11-related Noonan syndrome.",
+      "cardiac": "HCM is a central cardiac manifestation; pulmonary stenosis and conduction abnormalities can occur.",
+      "inheritance": "Autosomal dominant; syndrome-associated heterozygous variants.",
+      "testing": [
+        "Clinical genetics review, skin examination, ECG / echocardiography, hearing assessment and molecular testing."
+      ],
+      "gaps": [
+        "BRAF and MAP2K1 are also associated but absent from this catalog. Confirm appropriate RASopathy panel coverage."
+      ],
+      "caveats": [
+        "Lentigines often emerge during childhood and may be absent in young children. A shared gene name does not distinguish this syndrome from classic Noonan."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Noonan syndrome with multiple lentigines",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1383/",
+          "sections": "Suggestive findings; clinical description; diagnosis/testing; molecular genetics"
+        }
+      ]
+    },
+    {
+      "id": "dystrophinopathy",
+      "name": "Duchenne / Becker dystrophinopathy",
+      "genes": [
+        "DMD"
+      ],
+      "cue": "external",
+      "groups": [
+        "neuromuscular",
+        "muscle-development",
+        "cardiomyopathy-arrhythmia"
+      ],
+      "keywords": [
+        "Duchenne",
+        "Becker",
+        "dystrophin",
+        "Gowers",
+        "calf hypertrophy",
+        "pseudohypertrophy",
+        "proximal weakness",
+        "motor delay",
+        "toe walking"
+      ],
+      "clues": [
+        {
+          "text": "Calf enlargement with progressive proximal weakness / Gowers maneuver",
+          "strength": "supportive",
+          "kind": "examination"
+        },
+        {
+          "text": "Motor delay, frequent falls or difficulty running / climbing stairs",
+          "strength": "supportive",
+          "kind": "history"
+        },
+        {
+          "text": "Large calves alone",
+          "strength": "nonspecific",
+          "kind": "visible"
+        }
+      ],
+      "mechanism": "DMD encodes dystrophin, which stabilizes muscle-cell membranes. Absent or reduced function can injure both skeletal and cardiac muscle.",
+      "cardiac": "Dilated cardiomyopathy and arrhythmias; cardiac-predominant disease can occur in males and heterozygous females.",
+      "inheritance": "X-linked; both hemizygous males and heterozygous females can have cardiac involvement.",
+      "testing": [
+        "Neuromuscular assessment, CK, DMD molecular testing and cardiac evaluation."
+      ],
+      "gaps": [
+        "Validated deletion/duplication analysis plus sequence assessment is essential."
+      ],
+      "caveats": [
+        "Gowers maneuver and calf enlargement occur in other myopathies. Normal-looking muscle or absent weakness does not exclude DMD-related cardiomyopathy, especially in females."
+      ],
+      "sources": [
+        {
+          "title": "GeneReviews · Dystrophinopathies",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1119/",
+          "sections": "Suggestive findings; clinical description; molecular diagnosis; cardiac manifestations"
+        }
+      ]
+    }
+  ]
+}

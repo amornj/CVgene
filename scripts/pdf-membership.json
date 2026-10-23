@@ -1,0 +1,626 @@
+{
+  "ABCG5": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "ABCG8": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "ACTA2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "ACTC1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "ACTN2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "ACVRL1": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "ALPK3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "APOB": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "APOE": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "ATP13A3": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "BAG3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "BMPR2": {
+    "panels": [
+      "pah"
+    ],
+    "added": false
+  },
+  "CACNA1C": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CACNB2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CALM1": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CALM2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CALM3": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CASQ2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "CAV1": {
+    "panels": [
+      "pah"
+    ],
+    "added": false
+  },
+  "CAV3": {
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "COL3A1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "COL5A1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "COL5A2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "CRYAB": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "CSRP3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "DES": {
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "DMD": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "DSC2": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "DSG2": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "DSP": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "EFEMP2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "EIF2AK4": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "ELN": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "ENG": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "FBN1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "FBN2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "FHL1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "FHOD3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "FLNA": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "FLNC": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "GDF2": {
+    "panels": [
+      "pah"
+    ],
+    "added": false
+  },
+  "GLA": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "GPD1L": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "HCN4": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "JPH2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "JUP": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "KCNE1": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "KCNE2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "KCNH2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "KCNJ2": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "KCNK3": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "KCNQ1": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "KDR": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "LAMP2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "LDLR": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "LDLRAP1": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "LIPA": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "LMNA": {
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "LOX": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "MYBPC3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "MYH11": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "MYH7": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "MYL2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "MYL3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "MYLK": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "NEXN": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true
+  },
+  "NOTCH1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "PCSK9": {
+    "panels": [
+      "lipid"
+    ],
+    "added": false
+  },
+  "PKP2": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "PLN": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "PRKAG2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "PRKG1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "PTPN11": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "RAF1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "RBM20": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "RIT1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "RYR2": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "SCN5A": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "SGCD": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "SKI": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "SLC2A10": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "SMAD2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "SMAD3": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "SMAD4": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "SMAD9": {
+    "panels": [
+      "pah"
+    ],
+    "added": false
+  },
+  "SOX17": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "TBX4": {
+    "panels": [
+      "pah"
+    ],
+    "added": true
+  },
+  "TCAP": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TECRL": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": true
+  },
+  "TGFB2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "TGFB3": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": true
+  },
+  "TGFBR1": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "TGFBR2": {
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false
+  },
+  "TMEM43": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "TNNC1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TNNI3": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TNNT2": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TPM1": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TRDN": {
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false
+  },
+  "TTN": {
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "TTR": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  },
+  "VCL": {
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false
+  }
+}

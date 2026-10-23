@@ -1,0 +1,68 @@
+.frequency-launch{display:inline-flex;align-items:center;gap:6px;color:#80649c;font-size:10px;line-height:1.5;white-space:nowrap;padding:7px 0}
+.frequency-launch:hover{color:#62497c;text-decoration:underline;text-underline-offset:4px}
+.frequency-heading{margin-top:25px}
+.frequency-heading h2{font-family:'Manrope',sans-serif;font-size:27px;line-height:1.3;letter-spacing:-.8px;font-weight:700;color:#63516e}
+.frequency-heading p{font-size:12px;color:#8a759b;line-height:1.6;margin-top:4px}
+.frequency-context-label{display:block;font-size:10px;color:#806e8e;margin:23px 0 7px}
+.frequency-context{width:100%;min-width:0;min-height:40px;padding:9px 10px;border:1px solid #e6ddec;background:#fcfafd;border-radius:4px;color:#665274;font-size:11px;cursor:pointer}
+.frequency-population{padding:20px 0 18px;border-bottom:1px solid #eee7f2}
+.frequency-population h3{font-size:12px;line-height:1.6;color:#6d587c;font-weight:600;margin-bottom:13px}
+.frequency-population dl{margin:0;font-size:10px;line-height:1.7}
+.frequency-population dt{font-size:9px;color:#9988a4;margin-top:8px}
+.frequency-population dd{margin:2px 0 0;color:#766480}
+.frequency-list-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:21px 0 5px}
+.frequency-list-heading h3{font-size:11px;font-weight:600;color:#796087}
+.frequency-list-heading>span{font-size:8px;color:#9c8aa7;white-space:nowrap}
+.frequency-row{display:block;width:100%;text-align:left;padding:12px 0;border-bottom:1px solid #f1edf4;border-radius:2px}
+.frequency-row:hover{background:#faf7fc}
+.frequency-row-heading{display:flex;align-items:center;gap:8px;line-height:1.4}
+.frequency-row-heading strong{font-size:12px;font-weight:600;flex:1;color:#65506f}
+.frequency-row-heading>span{font-size:12px;font-variant-numeric:tabular-nums;color:#766480}
+.frequency-row-heading>svg{color:#b2a1be;transition:transform .15s}
+.frequency-row:hover .frequency-row-heading>svg{transform:translateX(2px)}
+.frequency-added .frequency-row-heading strong,.frequency-addition{color:#b54c55}
+.frequency-bar{display:block;position:relative;height:5px;margin-top:8px;background:#f0ebf4;border-radius:1px;overflow:hidden}
+.frequency-bar>i{position:absolute;top:0;height:100%;background:var(--frequency-color,#80649c)}
+.frequency-bar-range{opacity:.35;background:repeating-linear-gradient(90deg,var(--frequency-color,#80649c) 0 2px,transparent 2px 3px)!important}
+.frequency-bar>i.frequency-bar-lower{width:7px;height:7px;top:-1px;clip-path:polygon(0 0,100% 50%,0 100%)}
+.frequency-coverage-note{font-size:9px;line-height:1.8;color:#8d769b;margin-top:12px}
+.frequency-row-note{display:block;font-size:9px;color:#9783a3;line-height:1.7;margin-top:6px}
+.frequency-chart-note{font-size:9px;color:#9681a3;line-height:1.8;margin-top:11px}
+.frequency-missing,.frequency-sources{border-top:1px solid #eee7f2;margin-top:20px;padding-top:15px}
+.frequency-missing summary,.frequency-sources summary{display:flex;align-items:center;justify-content:space-between;gap:8px;list-style:none;font-size:11px;color:#796087;cursor:pointer;line-height:1.6;min-height:26px}
+.frequency-missing summary::-webkit-details-marker,.frequency-sources summary::-webkit-details-marker{display:none}
+.frequency-missing[open] summary>svg,.frequency-sources[open] summary>svg{transform:rotate(180deg)}
+.frequency-missing>p{font-size:10px;color:#8b7698;line-height:1.8;margin:10px 0}
+.frequency-missing>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 15px}
+.frequency-missing>div>button{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;color:#806791;text-align:left;padding:9px 0;border-bottom:1px solid #f3eef6}
+.frequency-missing>div>button.red-text{color:#b54c55}
+.frequency-missing>div>button:hover{text-decoration:underline;text-underline-offset:3px}
+.frequency-missing>div>button svg{color:#bca9c8}
+.frequency-interpretation{margin-top:22px}
+.frequency-interpretation h3{font-size:11px;font-weight:600;color:#796087;margin-bottom:9px}
+.frequency-interpretation p,.frequency-sources>div>p{font-size:10px;color:#826c90;line-height:1.85}
+.frequency-interpretation p.frequency-risk-note{margin-top:10px;font-size:9px;color:#a08baa}
+.frequency-sources>div{margin-top:12px}
+.frequency-sources a{display:inline-flex;align-items:flex-start;gap:5px;font-size:10px;line-height:1.7;color:#806097}
+.frequency-sources a>svg{margin-top:2px}
+.frequency-sources a:hover{text-decoration:underline;text-underline-offset:3px}
+.frequency-sources>div>p{font-size:9px;margin-top:5px}
+.frequency-reviewed{font-size:8px;color:#ad9ab9;line-height:1.6;margin-top:24px}
+.back-to-frequency{display:flex;align-items:center;gap:6px;font-size:10px;color:#80649c;text-align:left;padding:17px 0 0;line-height:1.7}
+.back-to-frequency+.gene-heading{margin-top:14px}
+.back-to-frequency:hover{text-decoration:underline;text-underline-offset:3px}
+.gene-frequency{border-top:1px solid #eee7f2;padding-top:19px}
+.gene-frequency h3{margin-bottom:6px}
+.gene-frequency-rows>button,.gene-frequency-static{display:flex;align-items:center;width:100%;gap:7px;text-align:left;border-bottom:1px solid #f1ebf5;padding:11px 0;line-height:1.5}
+.gene-frequency-label{flex:1;min-width:0;font-size:11px;color:#796087}
+.gene-frequency-label>small{display:block;font-size:8px;color:#a18bad;margin-top:3px}
+.gene-frequency-value{font-size:12px;color:#766480;font-variant-numeric:tabular-nums;white-space:nowrap}
+.gene-frequency-unknown{font-size:8px;color:#a08bab;max-width:75px;text-align:right}
+.gene-frequency-rows>button>svg{color:#bba9c6}
+.gene-frequency-rows>button:hover .gene-frequency-label{color:#563e6c}
+.gene-frequency>p{font-size:9px;line-height:1.8;color:#9b85a8;margin-top:10px}
+@media(max-width:760px){.frequency-launch{font-size:9px;white-space:normal;max-width:95px;gap:5px;text-align:left}.frequency-heading h2{font-size:28px}.frequency-context{font-size:12px;min-height:44px}.frequency-row{padding-top:14px;padding-bottom:14px}.frequency-row-heading strong,.frequency-row-heading>span{font-size:13px}.frequency-row-note{font-size:10px}.frequency-population dl{font-size:11px}.frequency-population dt{font-size:10px}.frequency-chart-note{font-size:10px}.frequency-interpretation p{font-size:11px}.frequency-missing>div>button{min-height:44px;font-size:11px}.gene-frequency-rows>button{min-height:49px}.gene-frequency-label{font-size:12px}.gene-frequency-label>small{font-size:9px}.gene-frequency-unknown{font-size:9px}.back-to-frequency{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.frequency-row-heading>svg{transition:none}}
+
+.results-heading-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 16px;flex-shrink:0;max-width:180px}
+@media(max-width:760px){.results-heading-actions{max-width:100px;gap:7px}.frequency-coverage-note{font-size:10px}}

@@ -1,0 +1,729 @@
+{
+  "reviewed": "2026-10-22",
+  "datasets": [
+    {
+      "id": "dcm",
+      "group": "dcm",
+      "title": "DCM",
+      "name": "Dilated cardiomyopathy",
+      "metric": "Estimated contribution to DCM",
+      "population": "Nonsyndromic DCM probands in published screening series",
+      "denominator": "DCM cases, including those without a molecular diagnosis",
+      "caveat": "Preliminary estimates from multiple screening series, not one pooled cohort. Referral patterns, ancestry and variant interpretation affect the yield. Syndromic DCM is outside this estimate.",
+      "sources": [
+        {
+          "label": "GeneReviews · DCM, Table 2",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1309/",
+          "detail": "Nonsyndromic Dilated Cardiomyopathy Genes; frequency column and footnote 2. These estimates do not replace current gene–disease validity curation."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "TTN",
+          "kind": "range",
+          "low": 15,
+          "high": 20,
+          "note": "Truncating variants; exon and transcript context matters."
+        },
+        {
+          "symbol": "LMNA",
+          "kind": "point",
+          "value": 6
+        },
+        {
+          "symbol": "MYH7",
+          "kind": "point",
+          "value": 4
+        },
+        {
+          "symbol": "FLNC",
+          "kind": "range",
+          "low": 2,
+          "high": 4,
+          "note": "DCM estimates must be interpreted with variant mechanism."
+        },
+        {
+          "symbol": "BAG3",
+          "kind": "point",
+          "value": 3
+        },
+        {
+          "symbol": "TNNT2",
+          "kind": "point",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "hcm",
+      "group": "hcm",
+      "title": "HCM",
+      "name": "Hypertrophic cardiomyopathy",
+      "metric": "Share of positive molecular diagnoses",
+      "population": "Molecularly diagnosed nonsyndromic HCM",
+      "denominator": "Genetically solved HCM cases, not all HCM patients",
+      "caveat": "These are contributions to positive molecular diagnoses. They are not the chance of a positive test in any HCM patient. Studies and testing eras differ; LVH phenocopies such as Fabry disease and amyloidosis are excluded.",
+      "sources": [
+        {
+          "label": "GeneReviews · HCM, Table 1",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1768/table/hyper-card.T.nonsyndromic_hypertrophic_c/",
+          "detail": "Nonsyndromic HCM overview, updated 6 March 2025; prevalence estimates and footnotes."
+        },
+        {
+          "label": "Alfares et al. · Genetics in Medicine, 2015",
+          "url": "https://www.nature.com/articles/gim2014205",
+          "detail": "Clinical testing of 2,912 HCM probands. Figure 2a describes relative contributions among positive cases; MYBPC3 and MYH7 together accounted for 83% of positive results."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "MYBPC3",
+          "kind": "point",
+          "value": 50
+        },
+        {
+          "symbol": "MYH7",
+          "kind": "point",
+          "value": 33
+        },
+        {
+          "symbol": "TNNI3",
+          "kind": "point",
+          "value": 5
+        },
+        {
+          "symbol": "TNNT2",
+          "kind": "point",
+          "value": 4
+        },
+        {
+          "symbol": "ACTC1",
+          "kind": "upper",
+          "limit": 3
+        },
+        {
+          "symbol": "MYL2",
+          "kind": "upper",
+          "limit": 3
+        },
+        {
+          "symbol": "MYL3",
+          "kind": "upper",
+          "limit": 3
+        },
+        {
+          "symbol": "PLN",
+          "kind": "upper",
+          "limit": 3
+        },
+        {
+          "symbol": "TPM1",
+          "kind": "upper",
+          "limit": 3
+        },
+        {
+          "symbol": "ACTN2",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "ALPK3",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Inheritance-specific interpretation is required."
+        },
+        {
+          "symbol": "CSRP3",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "FHOD3",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "JPH2",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "TNNC1",
+          "kind": "upper",
+          "limit": 1
+        }
+      ]
+    },
+    {
+      "id": "af",
+      "group": "af",
+      "title": "Early-onset AF",
+      "name": "Atrial fibrillation · early onset",
+      "metric": "Patients with a P/LP finding in each gene",
+      "population": "1,293 patients with AF onset before age 66; 95.7% White",
+      "denominator": "All 1,293 tested patients in this early-onset AF cohort",
+      "caveat": "P/LP means pathogenic or likely pathogenic. A cardiomyopathy or arrhythmia gene finding does not establish that it caused AF. This selected, predominantly European-ancestry cohort does not estimate gene frequencies in general AF. Only catalog genes with verified carrier counts are shown; VUS are excluded.",
+      "sources": [
+        {
+          "label": "Yoneda et al. · JAMA Cardiology, 2021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34495297/",
+          "detail": "Early-Onset Atrial Fibrillation and the Prevalence of Rare Variants in Cardiomyopathy and Arrhythmia Genes. 1,293 participants; 131 (10.1%) had a disease-associated variant."
+        },
+        {
+          "label": "Yoneda et al. · cohort follow-up, 2022",
+          "url": "https://jamanetwork.com/journals/jamacardiology/articlepdf/2792049/jamacardiology_yoneda_2022_oi_220016_1656698826.96165.pdf",
+          "detail": "Mortality Among Patients With Early-Onset AF and Rare Variants in Cardiomyopathy and Arrhythmia Genes. Confirms patient carrier counts: TTN 38, MYH7 18, LMNA 9, KCNQ1 8. Percentages here are calculated against the original 1,293 tested patients, not mortality outcomes."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "TTN",
+          "kind": "count",
+          "count": 38,
+          "total": 1293
+        },
+        {
+          "symbol": "MYH7",
+          "kind": "count",
+          "count": 18,
+          "total": 1293
+        },
+        {
+          "symbol": "LMNA",
+          "kind": "count",
+          "count": 9,
+          "total": 1293
+        },
+        {
+          "symbol": "KCNQ1",
+          "kind": "count",
+          "count": 8,
+          "total": 1293
+        }
+      ]
+    },
+    {
+      "id": "lqts",
+      "group": "va",
+      "title": "Long QT syndrome",
+      "name": "Arrhythmia · long QT syndrome",
+      "metric": "Estimated contribution to LQTS",
+      "population": "Clinically affected congenital LQTS cases",
+      "denominator": "LQTS cases, including those without an identified genetic cause",
+      "caveat": "Arrhythmia frequencies are syndrome specific. These estimates cannot be applied to all ventricular arrhythmia, acquired QT prolongation, AF or other SCN5A phenotypes. Rare overlap syndromes require variant- and inheritance-specific review.",
+      "sources": [
+        {
+          "label": "GeneReviews · LQTS, Table 4",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1129/table/rws.T.long_qt_syndrome_genetic_causes/",
+          "detail": "Long QT Syndrome: Genetic Causes, updated 21 March 2024. Proportion attributed to pathogenic variants; not penetrance or cardiac-event rates."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "KCNQ1",
+          "kind": "range",
+          "low": 30,
+          "high": 35
+        },
+        {
+          "symbol": "KCNH2",
+          "kind": "range",
+          "low": 25,
+          "high": 30
+        },
+        {
+          "symbol": "SCN5A",
+          "kind": "range",
+          "low": 5,
+          "high": 10,
+          "note": "Gain-of-function LQTS variants."
+        },
+        {
+          "symbol": "CACNA1C",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Gain-of-function; Timothy syndrome context may apply."
+        },
+        {
+          "symbol": "CALM1",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "CALM2",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "CALM3",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "TRDN",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Biallelic disease; LQTS–CPVT overlap."
+        }
+      ]
+    },
+    {
+      "id": "cpvt",
+      "group": "va",
+      "title": "CPVT",
+      "name": "Arrhythmia · CPVT",
+      "metric": "Estimated contribution to CPVT",
+      "population": "Catecholaminergic polymorphic ventricular tachycardia cases",
+      "denominator": "CPVT cases, including those without an identified genetic cause",
+      "caveat": "These are CPVT-specific estimates, not frequencies across all ventricular arrhythmias. Most CASQ2 disease is recessive; rare dominant variants require separate interpretation. RYR2 variant mechanism also matters.",
+      "sources": [
+        {
+          "label": "GeneReviews · CPVT, Table 1",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1289/table/cvt.T.molecular_genetic_testing_used_in/",
+          "detail": "Proportion of CPVT attributed to pathogenic variants in each gene. The separate assay detection-rate columns are not used."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "RYR2",
+          "kind": "range",
+          "low": 60,
+          "high": 70
+        },
+        {
+          "symbol": "CASQ2",
+          "kind": "point",
+          "value": 5,
+          "note": "Usually autosomal recessive; rare dominant variants."
+        },
+        {
+          "symbol": "CALM1",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "CALM2",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "CALM3",
+          "kind": "upper",
+          "limit": 1
+        },
+        {
+          "symbol": "TECRL",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Autosomal recessive."
+        },
+        {
+          "symbol": "TRDN",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Autosomal recessive."
+        }
+      ]
+    },
+    {
+      "id": "brugada",
+      "group": "va",
+      "title": "Brugada syndrome",
+      "name": "Arrhythmia · Brugada syndrome",
+      "metric": "Approximate SCN5A genetic testing yield",
+      "population": "Patients with Brugada syndrome",
+      "denominator": "Clinically diagnosed Brugada syndrome patients",
+      "caveat": "The 2022 ESC guideline identifies SCN5A as the gene with established evidence for Brugada syndrome. Historical candidate genes are not ranked here. The estimate is neither SCN5A penetrance nor a percentage of all ventricular arrhythmia.",
+      "sources": [
+        {
+          "label": "ESC ventricular arrhythmia guideline · 2022",
+          "url": "https://academic.oup.com/eurheartj/article/43/40/3997/6675633",
+          "detail": "Brugada syndrome section: genetic testing yield approximately 20%, with SCN5A the gene supported by clinical association evidence."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "SCN5A",
+          "kind": "point",
+          "value": 20,
+          "note": "Loss-of-function Brugada context."
+        }
+      ]
+    },
+    {
+      "id": "htad",
+      "group": "aortopathy",
+      "title": "HTAD referrals",
+      "name": "Thoracic aortic disease · referral cohort",
+      "defaultForPanel": true,
+      "eligibleSymbols": [
+        "ACTA2",
+        "COL3A1",
+        "EFEMP2",
+        "ELN",
+        "FBN1",
+        "FBN2",
+        "MYH11",
+        "MYLK",
+        "NOTCH1",
+        "PRKG1",
+        "SKI",
+        "SLC2A10",
+        "SMAD2",
+        "SMAD3",
+        "SMAD4",
+        "TGFB2",
+        "TGFB3",
+        "TGFBR1",
+        "TGFBR2"
+      ],
+      "metric": "Patients with a P/LP sequence finding",
+      "population": "810 Dutch index patients referred for suspected heritable thoracic aortic disorders, 2015–2017",
+      "denominator": "All 810 tested index patients, including negative results",
+      "coverageNote": "Sequence variant findings only. Six additional copy-number diagnoses are outside these rows.",
+      "caveat": "This mixed referral cohort is not a familial-only, Marfan-only or vascular Ehlers–Danlos cohort, and does not represent all aortic disease. Rows use the 60 sequence-variant diagnoses over all 810 referrals. Six further CNV diagnoses were reported separately and are excluded from these gene counts; VUS are excluded. Test selection, age and the 2015–2017 assay affect yield. Genes outside the study panel have no estimate here.",
+      "sources": [
+        {
+          "label": "Overwater et al. · Human Mutation, 2018",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175145/",
+          "detail": "Results section 3.1 gives gene-specific counts for 60 sequence-variant-positive patients among 810 index referrals. A separate six CNV diagnoses bring the overall study yield to 66/810. The per-gene percentages in the article use 60 positives; this app recalculates against all 810 referrals."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "FBN1",
+          "kind": "count",
+          "count": 18,
+          "total": 810
+        },
+        {
+          "symbol": "ACTA2",
+          "kind": "count",
+          "count": 8,
+          "total": 810
+        },
+        {
+          "symbol": "SMAD3",
+          "kind": "count",
+          "count": 7,
+          "total": 810
+        },
+        {
+          "symbol": "COL3A1",
+          "kind": "count",
+          "count": 6,
+          "total": 810
+        },
+        {
+          "symbol": "TGFB2",
+          "kind": "count",
+          "count": 4,
+          "total": 810
+        },
+        {
+          "symbol": "TGFBR1",
+          "kind": "count",
+          "count": 3,
+          "total": 810
+        },
+        {
+          "symbol": "TGFBR2",
+          "kind": "count",
+          "count": 3,
+          "total": 810
+        },
+        {
+          "symbol": "FBN2",
+          "kind": "count",
+          "count": 3,
+          "total": 810
+        },
+        {
+          "symbol": "MYH11",
+          "kind": "count",
+          "count": 2,
+          "total": 810
+        },
+        {
+          "symbol": "TGFB3",
+          "kind": "count",
+          "count": 2,
+          "total": 810
+        },
+        {
+          "symbol": "SLC2A10",
+          "kind": "count",
+          "count": 2,
+          "total": 810,
+          "note": "Biallelic findings; arterial tortuosity syndrome."
+        },
+        {
+          "symbol": "PRKG1",
+          "kind": "count",
+          "count": 1,
+          "total": 810
+        },
+        {
+          "symbol": "NOTCH1",
+          "kind": "count",
+          "count": 1,
+          "total": 810
+        }
+      ]
+    },
+    {
+      "id": "lds",
+      "group": "aortopathy",
+      "title": "Loeys–Dietz syndrome",
+      "name": "Loeys–Dietz syndrome",
+      "eligibleSymbols": [
+        "TGFBR1",
+        "TGFBR2",
+        "SMAD2",
+        "SMAD3",
+        "TGFB2",
+        "TGFB3"
+      ],
+      "metric": "Estimated contribution to Loeys–Dietz syndrome",
+      "population": "Patients with Loeys–Dietz syndrome in the GeneReviews reference summary",
+      "denominator": "Loeys–Dietz syndrome cases, not all aortic disease patients",
+      "coverageNote": "Catalog genes only; IPO8 is outside this panel. Ranges are independent estimates.",
+      "caveat": "These syndrome-specific estimates cannot be applied to nonsyndromic thoracic aortic disease, Marfan syndrome or vascular Ehlers–Danlos syndrome. The contribution column is used, not the separate assay detection-rate columns. The catalog does not contain IPO8. Published ranges overlap and must not be added to predict panel yield.",
+      "sources": [
+        {
+          "label": "GeneReviews · Loeys–Dietz syndrome, Table 1",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1133/table/loeys-dietz.T.molecular_genetic_testing/",
+          "detail": "Updated 12 September 2024. Proportion of LDS attributed to pathogenic variants in each gene; footnote 3 cites Meester et al. 2017. Sequence-analysis detection rates are separate and are not ranked here."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "TGFBR2",
+          "kind": "range",
+          "low": 55,
+          "high": 60
+        },
+        {
+          "symbol": "TGFBR1",
+          "kind": "range",
+          "low": 20,
+          "high": 25
+        },
+        {
+          "symbol": "SMAD3",
+          "kind": "range",
+          "low": 5,
+          "high": 10
+        },
+        {
+          "symbol": "TGFB2",
+          "kind": "range",
+          "low": 5,
+          "high": 10
+        },
+        {
+          "symbol": "SMAD2",
+          "kind": "range",
+          "low": 1,
+          "high": 5
+        },
+        {
+          "symbol": "TGFB3",
+          "kind": "range",
+          "low": 1,
+          "high": 5
+        }
+      ]
+    },
+    {
+      "id": "pah_familial",
+      "group": "pah",
+      "title": "Familial PAH",
+      "name": "PAH · familial",
+      "defaultForPanel": true,
+      "eligibleSymbols": [
+        "ACVRL1",
+        "ATP13A3",
+        "BMPR2",
+        "CAV1",
+        "ENG",
+        "GDF2",
+        "KCNK3",
+        "KDR",
+        "SMAD9",
+        "SOX17",
+        "TBX4"
+      ],
+      "metric": "Estimated BMPR2 contribution to familial PAH",
+      "population": "Patients with pulmonary arterial hypertension occurring in families",
+      "denominator": "Familial PAH cases, including those without a molecular diagnosis",
+      "coverageNote": "BMPR2 has a curated range here. Other PAH genes are not assigned an invented percentage.",
+      "caveat": "This literature range applies to familial pulmonary arterial hypertension, not all pulmonary hypertension or all genetically diagnosed PAH. It is not the probability that a healthy BMPR2 carrier develops PAH. Associated PAH, idiopathic PAH and PVOD/PCH have different gene distributions. Rare-gene estimates vary by cohort, ancestry and age.",
+      "sources": [
+        {
+          "label": "Zhu et al. · Genome Medicine, 2019",
+          "url": "https://link.springer.com/article/10.1186/s13073-019-0685-z",
+          "detail": "Background: BMPR2 variants reported in 60–80% of familial PAH. The separate PAH Biobank research-variant counts are not used as clinical P/LP frequencies here."
+        },
+        {
+          "label": "International PAH genetic testing consensus · 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9947314/",
+          "detail": "Distinguishes familial, idiopathic and PVOD/PCH disease. The quoted 70–87% familial yield in its text is for all known PAH genes, not BMPR2 alone."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "BMPR2",
+          "kind": "range",
+          "low": 60,
+          "high": 80,
+          "note": "Loss-of-function context; copy-number detection matters."
+        }
+      ]
+    },
+    {
+      "id": "pah_idiopathic",
+      "group": "pah",
+      "title": "Idiopathic PAH",
+      "name": "PAH · idiopathic",
+      "eligibleSymbols": [
+        "BMPR2"
+      ],
+      "metric": "Estimated BMPR2 contribution to idiopathic PAH",
+      "population": "PAH cases without an identified associated cause or recognized family history before testing",
+      "denominator": "Clinically idiopathic PAH cases before genetic classification",
+      "caveat": "This literature range describes clinically idiopathic PAH before genetic testing. A pathogenic finding can subsequently reclassify a case as heritable PAH. It does not apply to all pulmonary hypertension, and is not a penetrance estimate. Broader cohorts, ancestries and testing strategies have reported different yields.",
+      "sources": [
+        {
+          "label": "The role of genomics and genetics in PAH · 2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7590931/",
+          "detail": "Published synthesis reports BMPR2 variants in approximately 10–20% of idiopathic PAH; kept separate from its familial PAH estimates."
+        },
+        {
+          "label": "International PAH genetic testing consensus · 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9947314/",
+          "detail": "Distinguishes familial, idiopathic and PVOD/PCH disease. The quoted 70–87% familial yield in its text is for all known PAH genes, not BMPR2 alone."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "BMPR2",
+          "kind": "range",
+          "low": 10,
+          "high": 20
+        }
+      ]
+    },
+    {
+      "id": "pvod_sporadic",
+      "group": "pah",
+      "title": "Sporadic PVOD",
+      "name": "PVOD · sporadic discovery cohort",
+      "eligibleSymbols": [
+        "EIF2AK4"
+      ],
+      "metric": "Patients with biallelic EIF2AK4 findings",
+      "population": "20 histologically confirmed, apparently sporadic PVOD cases in the discovery study",
+      "denominator": "All 20 sporadic PVOD patients tested in this study",
+      "caveat": "This small, selected discovery cohort is not an estimate for all PAH, all pulmonary hypertension or all PVOD/PCH populations. Both EIF2AK4 alleles must be considered. A single heterozygous finding is not equivalent to the biallelic disease counted here. Familial PVOD uses a separate family-based denominator.",
+      "sources": [
+        {
+          "label": "Eyries et al. · Nature Genetics, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24292273/",
+          "detail": "Biallelic EIF2AK4 findings in 13 of 13 studied PVOD families and 5 of 20 histologically confirmed sporadic PVOD cases. Families and individual patients are separate denominators."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "EIF2AK4",
+          "kind": "count",
+          "count": 5,
+          "total": 20,
+          "note": "Biallelic findings only; selected histology-confirmed cohort."
+        }
+      ]
+    },
+    {
+      "id": "pvod_familial",
+      "group": "pah",
+      "title": "Familial PVOD",
+      "name": "PVOD · familial discovery cohort",
+      "eligibleSymbols": [
+        "EIF2AK4"
+      ],
+      "metric": "Studied families with biallelic EIF2AK4 findings",
+      "population": "13 selected PVOD families in the original discovery study",
+      "denominator": "All 13 PVOD families studied, not 13 individual patients",
+      "coverageNote": "13/13 studied families is a discovery-series observation, not universal test sensitivity.",
+      "caveat": "All 13 families in this selected discovery study had biallelic EIF2AK4 findings. This does not establish 100% sensitivity in other PVOD populations, and must not be applied to all pulmonary hypertension. The unit is families, not patients. Sporadic PVOD is shown separately.",
+      "sources": [
+        {
+          "label": "Eyries et al. · Nature Genetics, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24292273/",
+          "detail": "Biallelic EIF2AK4 findings in 13 of 13 studied PVOD families and 5 of 20 histologically confirmed sporadic PVOD cases. Families and individual patients are separate denominators."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "EIF2AK4",
+          "kind": "count",
+          "count": 13,
+          "total": 13,
+          "unit": "families",
+          "note": "Biallelic findings; selected families, not population prevalence."
+        }
+      ]
+    },
+    {
+      "id": "fh",
+      "group": "lipid",
+      "title": "Familial hypercholesterolemia",
+      "name": "Familial hypercholesterolemia (FH)",
+      "defaultForPanel": true,
+      "eligibleSymbols": [
+        "LDLR",
+        "APOB",
+        "PCSK9",
+        "LDLRAP1"
+      ],
+      "metric": "Estimated contribution to clinical FH",
+      "population": "Probands with a clinical diagnosis of familial hypercholesterolemia",
+      "denominator": "Clinically diagnosed FH cases, including genetically unresolved cases",
+      "coverageNote": "ABCG5, ABCG8, APOE and LIPA represent other lipid disorders; FH percentages are not assigned to them.",
+      "caveat": "These estimates apply to clinical FH, not all elevated cholesterol or dyslipidemia. Clinical criteria, age, ancestry and founder variants affect yield. LDLR >50% is a lower bound, not an exact percentage or an assay detection rate. PCSK9 estimates concern gain-of-function disease. Sitosterolemia, dysbetalipoproteinemia and lysosomal acid lipase deficiency need separate disease-specific estimates.",
+      "sources": [
+        {
+          "label": "GeneReviews · FH, Table 1",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK174884/table/hyperchol.T.molecular_genetic_testing_us/",
+          "detail": "Uses the proportion of FH attributed to pathogenic variants: LDLR >50%, APOB approximately 5–10%, PCSK9 <1%, LDLRAP1 <1%. Footnote 7 cites Sturm et al. 2018. Sequence-analysis and deletion/duplication detection-rate columns are not used."
+        }
+      ],
+      "entries": [
+        {
+          "symbol": "LDLR",
+          "kind": "lower",
+          "limit": 50,
+          "note": "Lower bound; sequence and copy-number analysis are relevant."
+        },
+        {
+          "symbol": "APOB",
+          "kind": "range",
+          "low": 5,
+          "high": 10
+        },
+        {
+          "symbol": "PCSK9",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Gain-of-function FH variants."
+        },
+        {
+          "symbol": "LDLRAP1",
+          "kind": "upper",
+          "limit": 1,
+          "note": "Biallelic recessive FH."
+        }
+      ]
+    }
+  ]
+}

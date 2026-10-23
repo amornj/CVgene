@@ -1,0 +1,1535 @@
+[
+  {
+    "symbol": "ABCG5",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "ATP binding cassette subfamily G member 5",
+    "hgncId": "HGNC:13886",
+    "ncbiId": "64240",
+    "aliases": [
+      "STSL"
+    ]
+  },
+  {
+    "symbol": "ABCG8",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "ATP binding cassette subfamily G member 8",
+    "hgncId": "HGNC:13887",
+    "ncbiId": "64241",
+    "aliases": [
+      "GBD4"
+    ]
+  },
+  {
+    "symbol": "ACTA2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "actin alpha 2, smooth muscle",
+    "hgncId": "HGNC:130",
+    "ncbiId": "59",
+    "aliases": [
+      "ACTSA"
+    ]
+  },
+  {
+    "symbol": "ACTC1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "actin alpha cardiac muscle 1",
+    "hgncId": "HGNC:143",
+    "ncbiId": "70",
+    "aliases": [
+      "CMD1R",
+      "ACTC"
+    ]
+  },
+  {
+    "symbol": "ACTN2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "actinin alpha 2",
+    "hgncId": "HGNC:164",
+    "ncbiId": "88",
+    "aliases": []
+  },
+  {
+    "symbol": "ACVRL1",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "activin A receptor like type 1",
+    "hgncId": "HGNC:175",
+    "ncbiId": "94",
+    "aliases": [
+      "HHT2",
+      "ALK1",
+      "HHT",
+      "ACVRLK1",
+      "ORW2"
+    ]
+  },
+  {
+    "symbol": "ALPK3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "alpha kinase 3",
+    "hgncId": "HGNC:17574",
+    "ncbiId": "57538",
+    "aliases": [
+      "MAK",
+      "KIAA1330",
+      "Midori"
+    ]
+  },
+  {
+    "symbol": "APOB",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "apolipoprotein B",
+    "hgncId": "HGNC:603",
+    "ncbiId": "338",
+    "aliases": [
+      "ApoB-100"
+    ]
+  },
+  {
+    "symbol": "APOE",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "apolipoprotein E",
+    "hgncId": "HGNC:613",
+    "ncbiId": "348",
+    "aliases": [
+      "AD2"
+    ]
+  },
+  {
+    "symbol": "ATP13A3",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "ATPase 13A3",
+    "hgncId": "HGNC:24113",
+    "ncbiId": "79572",
+    "aliases": [
+      "AFURS1"
+    ]
+  },
+  {
+    "symbol": "BAG3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "BAG cochaperone 3",
+    "hgncId": "HGNC:939",
+    "ncbiId": "9531",
+    "aliases": []
+  },
+  {
+    "symbol": "BMPR2",
+    "panels": [
+      "pah"
+    ],
+    "added": false,
+    "name": "bone morphogenetic protein receptor type 2",
+    "hgncId": "HGNC:1078",
+    "ncbiId": "659",
+    "aliases": [
+      "BRK-3",
+      "T-ALK",
+      "BMPR3",
+      "BMPR-II",
+      "PPH1"
+    ]
+  },
+  {
+    "symbol": "CACNA1C",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calcium voltage-gated channel subunit alpha1 C",
+    "hgncId": "HGNC:1390",
+    "ncbiId": "775",
+    "aliases": [
+      "Cav1.2",
+      "CACH2",
+      "CACN2",
+      "TS",
+      "LQT8",
+      "CCHL1A1",
+      "CACNL1A1",
+      "CACNA1C-IT2"
+    ]
+  },
+  {
+    "symbol": "CACNB2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calcium voltage-gated channel auxiliary subunit beta 2",
+    "hgncId": "HGNC:1402",
+    "ncbiId": "783",
+    "aliases": [
+      "MYSB",
+      "CACNLB2"
+    ]
+  },
+  {
+    "symbol": "CALM1",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calmodulin 1",
+    "hgncId": "HGNC:1442",
+    "ncbiId": "801",
+    "aliases": [
+      "CAMI",
+      "PHKD",
+      "DD132",
+      "PHKD1",
+      "CALML2"
+    ]
+  },
+  {
+    "symbol": "CALM2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calmodulin 2",
+    "hgncId": "HGNC:1445",
+    "ncbiId": "805",
+    "aliases": [
+      "PHKD",
+      "PHKD2",
+      "CAMII"
+    ]
+  },
+  {
+    "symbol": "CALM3",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calmodulin 3",
+    "hgncId": "HGNC:1449",
+    "ncbiId": "808",
+    "aliases": [
+      "PHKD",
+      "PHKD3"
+    ]
+  },
+  {
+    "symbol": "CASQ2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "calsequestrin 2",
+    "hgncId": "HGNC:1513",
+    "ncbiId": "845",
+    "aliases": [
+      "PDIB2"
+    ]
+  },
+  {
+    "symbol": "CAV1",
+    "panels": [
+      "pah"
+    ],
+    "added": false,
+    "name": "caveolin 1",
+    "hgncId": "HGNC:1527",
+    "ncbiId": "857",
+    "aliases": [
+      "CAV"
+    ]
+  },
+  {
+    "symbol": "CAV3",
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "caveolin 3",
+    "hgncId": "HGNC:1529",
+    "ncbiId": "859",
+    "aliases": [
+      "VIP-21",
+      "LGMD1C",
+      "VIP21",
+      "LQT9"
+    ]
+  },
+  {
+    "symbol": "COL3A1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "collagen type III alpha 1 chain",
+    "hgncId": "HGNC:2201",
+    "ncbiId": "1281",
+    "aliases": [
+      "EDS4A"
+    ]
+  },
+  {
+    "symbol": "COL5A1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "collagen type V alpha 1 chain",
+    "hgncId": "HGNC:2209",
+    "ncbiId": "1289",
+    "aliases": []
+  },
+  {
+    "symbol": "COL5A2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "collagen type V alpha 2 chain",
+    "hgncId": "HGNC:2210",
+    "ncbiId": "1290",
+    "aliases": []
+  },
+  {
+    "symbol": "CRYAB",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "crystallin alpha B",
+    "hgncId": "HGNC:2389",
+    "ncbiId": "1410",
+    "aliases": [
+      "HSPB5",
+      "CRYA2"
+    ]
+  },
+  {
+    "symbol": "CSRP3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "cysteine and glycine rich protein 3",
+    "hgncId": "HGNC:2472",
+    "ncbiId": "8048",
+    "aliases": [
+      "CLP",
+      "MLP",
+      "CMD1M"
+    ]
+  },
+  {
+    "symbol": "DES",
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "desmin",
+    "hgncId": "HGNC:2770",
+    "ncbiId": "1674",
+    "aliases": [
+      "CMD1I",
+      "CSM1",
+      "CSM2",
+      "LGMD2R"
+    ]
+  },
+  {
+    "symbol": "DMD",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "dystrophin",
+    "hgncId": "HGNC:2928",
+    "ncbiId": "1756",
+    "aliases": [
+      "BMD",
+      "DXS142",
+      "DXS164",
+      "DXS206",
+      "DXS230",
+      "DXS239",
+      "DXS268",
+      "DXS269",
+      "DXS270",
+      "DXS272",
+      "MRX85"
+    ]
+  },
+  {
+    "symbol": "DSC2",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "desmocollin 2",
+    "hgncId": "HGNC:3036",
+    "ncbiId": "1824",
+    "aliases": [
+      "CDHF2",
+      "DSC3"
+    ]
+  },
+  {
+    "symbol": "DSG2",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "desmoglein 2",
+    "hgncId": "HGNC:3049",
+    "ncbiId": "1829",
+    "aliases": [
+      "CDHF5"
+    ]
+  },
+  {
+    "symbol": "DSP",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "desmoplakin",
+    "hgncId": "HGNC:3052",
+    "ncbiId": "1832",
+    "aliases": [
+      "KPPS2",
+      "PPKS2",
+      "DPI",
+      "DPII",
+      "DP"
+    ]
+  },
+  {
+    "symbol": "EFEMP2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "EGF-like fibulin extracellular matrix protein 2",
+    "hgncId": "HGNC:3219",
+    "ncbiId": "30008",
+    "aliases": [
+      "FBLN4",
+      "UPH1"
+    ]
+  },
+  {
+    "symbol": "EIF2AK4",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "eukaryotic translation initiation factor 2 alpha kinase 4",
+    "hgncId": "HGNC:19687",
+    "ncbiId": "440275",
+    "aliases": [
+      "GCN2",
+      "KIAA1338"
+    ]
+  },
+  {
+    "symbol": "ELN",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "elastin",
+    "hgncId": "HGNC:3327",
+    "ncbiId": "2006",
+    "aliases": [
+      "WBS",
+      "WS",
+      "SVAS"
+    ]
+  },
+  {
+    "symbol": "ENG",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "endoglin",
+    "hgncId": "HGNC:3349",
+    "ncbiId": "2022",
+    "aliases": [
+      "END",
+      "HHT1",
+      "CD105",
+      "ORW1",
+      "ORW"
+    ]
+  },
+  {
+    "symbol": "FBN1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "fibrillin 1",
+    "hgncId": "HGNC:3603",
+    "ncbiId": "2200",
+    "aliases": [
+      "MASS",
+      "OCTD",
+      "SGS",
+      "FBN",
+      "MFS1",
+      "WMS"
+    ]
+  },
+  {
+    "symbol": "FBN2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "fibrillin 2",
+    "hgncId": "HGNC:3604",
+    "ncbiId": "2201",
+    "aliases": [
+      "DA9",
+      "CCA"
+    ]
+  },
+  {
+    "symbol": "FHL1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "four and a half LIM domains 1",
+    "hgncId": "HGNC:3702",
+    "ncbiId": "2273",
+    "aliases": [
+      "SLIM1",
+      "KYO-T",
+      "bA535K18.1",
+      "FHL1B",
+      "XMPMA",
+      "FLH1A",
+      "MGC111107"
+    ]
+  },
+  {
+    "symbol": "FHOD3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "formin homology 2 domain containing 3",
+    "hgncId": "HGNC:26178",
+    "ncbiId": "80206",
+    "aliases": [
+      "FHOS2",
+      "KIAA1695",
+      "FLJ22297",
+      "FLJ22717"
+    ]
+  },
+  {
+    "symbol": "FLNA",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "filamin A",
+    "hgncId": "HGNC:3754",
+    "ncbiId": "2316",
+    "aliases": [
+      "ABP-280",
+      "FLN1",
+      "FLN",
+      "OPD2",
+      "OPD1"
+    ]
+  },
+  {
+    "symbol": "FLNC",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "filamin C",
+    "hgncId": "HGNC:3756",
+    "ncbiId": "2318",
+    "aliases": [
+      "ABP-280",
+      "ABPL",
+      "FLN2"
+    ]
+  },
+  {
+    "symbol": "GDF2",
+    "panels": [
+      "pah"
+    ],
+    "added": false,
+    "name": "growth differentiation factor 2",
+    "hgncId": "HGNC:4217",
+    "ncbiId": "2658",
+    "aliases": [
+      "BMP-9",
+      "BMP9"
+    ]
+  },
+  {
+    "symbol": "GLA",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "galactosidase alpha",
+    "hgncId": "HGNC:4296",
+    "ncbiId": "2717",
+    "aliases": [
+      "GALA"
+    ]
+  },
+  {
+    "symbol": "GPD1L",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "glycerol-3-phosphate dehydrogenase 1 like",
+    "hgncId": "HGNC:28956",
+    "ncbiId": "23171",
+    "aliases": [
+      "KIAA0089"
+    ]
+  },
+  {
+    "symbol": "HCN4",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "hyperpolarization activated cyclic nucleotide gated potassium channel 4",
+    "hgncId": "HGNC:16882",
+    "ncbiId": "10021",
+    "aliases": []
+  },
+  {
+    "symbol": "JPH2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "junctophilin 2",
+    "hgncId": "HGNC:14202",
+    "ncbiId": "57158",
+    "aliases": [
+      "JP-2",
+      "JP2"
+    ]
+  },
+  {
+    "symbol": "JUP",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "junction plakoglobin",
+    "hgncId": "HGNC:6207",
+    "ncbiId": "3728",
+    "aliases": [
+      "DP3",
+      "PDGB",
+      "PKGB",
+      "DPIII",
+      "PG",
+      "CTNNG"
+    ]
+  },
+  {
+    "symbol": "KCNE1",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "potassium voltage-gated channel subfamily E regulatory subunit 1",
+    "hgncId": "HGNC:6240",
+    "ncbiId": "3753",
+    "aliases": [
+      "minK",
+      "IsK",
+      "JLNS2",
+      "LQT5"
+    ]
+  },
+  {
+    "symbol": "KCNE2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "potassium voltage-gated channel subfamily E regulatory subunit 2",
+    "hgncId": "HGNC:6242",
+    "ncbiId": "9992",
+    "aliases": [
+      "MiRP1",
+      "LQT6"
+    ]
+  },
+  {
+    "symbol": "KCNH2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "potassium voltage-gated channel subfamily H member 2",
+    "hgncId": "HGNC:6251",
+    "ncbiId": "3757",
+    "aliases": [
+      "Kv11.1",
+      "HERG",
+      "erg1",
+      "LQT2"
+    ]
+  },
+  {
+    "symbol": "KCNJ2",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "potassium inwardly rectifying channel subfamily J member 2",
+    "hgncId": "HGNC:6263",
+    "ncbiId": "3759",
+    "aliases": [
+      "Kir2.1",
+      "IRK1",
+      "LQT7"
+    ]
+  },
+  {
+    "symbol": "KCNK3",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "potassium two pore domain channel subfamily K member 3",
+    "hgncId": "HGNC:6278",
+    "ncbiId": "3777",
+    "aliases": [
+      "K2p3.1",
+      "TASK",
+      "TASK-1",
+      "TASK1"
+    ]
+  },
+  {
+    "symbol": "KCNQ1",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "potassium voltage-gated channel subfamily Q member 1",
+    "hgncId": "HGNC:6294",
+    "ncbiId": "3784",
+    "aliases": [
+      "Kv7.1",
+      "KCNA8",
+      "KVLQT1",
+      "JLNS1",
+      "LQT1",
+      "LQT",
+      "KCNA9"
+    ]
+  },
+  {
+    "symbol": "KDR",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "kinase insert domain receptor",
+    "hgncId": "HGNC:6307",
+    "ncbiId": "3791",
+    "aliases": [
+      "FLK1",
+      "VEGFR",
+      "VEGFR2",
+      "CD309"
+    ]
+  },
+  {
+    "symbol": "LAMP2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "lysosome associated membrane protein 2",
+    "hgncId": "HGNC:6501",
+    "ncbiId": "3920",
+    "aliases": [
+      "CD107b"
+    ]
+  },
+  {
+    "symbol": "LDLR",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "low density lipoprotein receptor",
+    "hgncId": "HGNC:6547",
+    "ncbiId": "3949",
+    "aliases": [
+      "LDLCQ2"
+    ]
+  },
+  {
+    "symbol": "LDLRAP1",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "low density lipoprotein receptor adaptor protein 1",
+    "hgncId": "HGNC:18640",
+    "ncbiId": "26119",
+    "aliases": [
+      "ARH",
+      "ARH2",
+      "FHCB1",
+      "FHCB2",
+      "MGC34705",
+      "DKFZp586D0624"
+    ]
+  },
+  {
+    "symbol": "LIPA",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "lipase A, lysosomal acid type",
+    "hgncId": "HGNC:6617",
+    "ncbiId": "3988",
+    "aliases": [
+      "LAL",
+      "CESD"
+    ]
+  },
+  {
+    "symbol": "LMNA",
+    "panels": [
+      "cardiomyopathy",
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "lamin A/C",
+    "hgncId": "HGNC:6636",
+    "ncbiId": "4000",
+    "aliases": [
+      "HGPS",
+      "MADA",
+      "LMN1",
+      "CMD1A",
+      "LGMD1B",
+      "PRO1",
+      "LMNL1"
+    ]
+  },
+  {
+    "symbol": "LOX",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "lysyl oxidase",
+    "hgncId": "HGNC:6664",
+    "ncbiId": "4015",
+    "aliases": []
+  },
+  {
+    "symbol": "MYBPC3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "myosin binding protein C3",
+    "hgncId": "HGNC:7551",
+    "ncbiId": "4607",
+    "aliases": [
+      "FHC",
+      "cMyBP-C",
+      "CMH4"
+    ]
+  },
+  {
+    "symbol": "MYH11",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "myosin heavy chain 11",
+    "hgncId": "HGNC:7569",
+    "ncbiId": "4629",
+    "aliases": [
+      "SMMHC",
+      "SMHC",
+      "SMMS-1"
+    ]
+  },
+  {
+    "symbol": "MYH7",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "myosin heavy chain 7",
+    "hgncId": "HGNC:7577",
+    "ncbiId": "4625",
+    "aliases": [
+      "CMD1S",
+      "CMH1",
+      "MPD1"
+    ]
+  },
+  {
+    "symbol": "MYL2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "myosin light chain 2",
+    "hgncId": "HGNC:7583",
+    "ncbiId": "4633",
+    "aliases": [
+      "CMH10"
+    ]
+  },
+  {
+    "symbol": "MYL3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "myosin light chain 3",
+    "hgncId": "HGNC:7584",
+    "ncbiId": "4634",
+    "aliases": [
+      "CMH8",
+      "VLC1",
+      "MLC1V",
+      "MLC1SB"
+    ]
+  },
+  {
+    "symbol": "MYLK",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "myosin light chain kinase",
+    "hgncId": "HGNC:7590",
+    "ncbiId": "4638",
+    "aliases": [
+      "MLCK",
+      "smMLCK",
+      "MYLK1",
+      "MLCK1",
+      "KRP",
+      "Telokin",
+      "MLCK108",
+      "MLCK210",
+      "MYLK-L"
+    ]
+  },
+  {
+    "symbol": "NEXN",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": true,
+    "name": "nexilin F-actin binding protein",
+    "hgncId": "HGNC:29557",
+    "ncbiId": "91624",
+    "aliases": [
+      "nexilin",
+      "NELIN"
+    ]
+  },
+  {
+    "symbol": "NOTCH1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "notch receptor 1",
+    "hgncId": "HGNC:7881",
+    "ncbiId": "4851",
+    "aliases": [
+      "TAN1"
+    ]
+  },
+  {
+    "symbol": "PCSK9",
+    "panels": [
+      "lipid"
+    ],
+    "added": false,
+    "name": "proprotein convertase subtilisin/kexin type 9",
+    "hgncId": "HGNC:20001",
+    "ncbiId": "255738",
+    "aliases": [
+      "NARC-1",
+      "FH3",
+      "HCHOLA3"
+    ]
+  },
+  {
+    "symbol": "PKP2",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "plakophilin 2",
+    "hgncId": "HGNC:9024",
+    "ncbiId": "5318",
+    "aliases": []
+  },
+  {
+    "symbol": "PLN",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "phospholamban",
+    "hgncId": "HGNC:9080",
+    "ncbiId": "5350",
+    "aliases": [
+      "CMD1P",
+      "PLB"
+    ]
+  },
+  {
+    "symbol": "PRKAG2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "protein kinase AMP-activated non-catalytic subunit gamma 2",
+    "hgncId": "HGNC:9386",
+    "ncbiId": "51422",
+    "aliases": [
+      "AAKG",
+      "AAKG2",
+      "H91620p",
+      "WPWS",
+      "CMH6"
+    ]
+  },
+  {
+    "symbol": "PRKG1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "protein kinase cGMP-dependent 1",
+    "hgncId": "HGNC:9414",
+    "ncbiId": "5592",
+    "aliases": [
+      "PGK",
+      "PKG",
+      "PKG1",
+      "PRKGR1B",
+      "PRKG1B"
+    ]
+  },
+  {
+    "symbol": "PTPN11",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "protein tyrosine phosphatase non-receptor type 11",
+    "hgncId": "HGNC:9644",
+    "ncbiId": "5781",
+    "aliases": [
+      "BPTP3",
+      "SH-PTP2",
+      "SHP-2",
+      "PTP2C",
+      "SHP2",
+      "NS1"
+    ]
+  },
+  {
+    "symbol": "RAF1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "Raf-1 proto-oncogene, serine/threonine kinase",
+    "hgncId": "HGNC:9829",
+    "ncbiId": "5894",
+    "aliases": [
+      "Raf-1",
+      "c-Raf",
+      "CRAF"
+    ]
+  },
+  {
+    "symbol": "RBM20",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "RNA binding motif protein 20",
+    "hgncId": "HGNC:27424",
+    "ncbiId": "282996",
+    "aliases": []
+  },
+  {
+    "symbol": "RIT1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "Ras like without CAAX 1",
+    "hgncId": "HGNC:10023",
+    "ncbiId": "6016",
+    "aliases": [
+      "RIBB",
+      "ROC1",
+      "MGC125864",
+      "MGC125865",
+      "RIT"
+    ]
+  },
+  {
+    "symbol": "RYR2",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "ryanodine receptor 2",
+    "hgncId": "HGNC:10484",
+    "ncbiId": "6262",
+    "aliases": [
+      "ARVC2",
+      "VTSIP",
+      "ARVD2"
+    ]
+  },
+  {
+    "symbol": "SCN5A",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "sodium voltage-gated channel alpha subunit 5",
+    "hgncId": "HGNC:10593",
+    "ncbiId": "6331",
+    "aliases": [
+      "Nav1.5",
+      "LQT3",
+      "HB1",
+      "HBBD",
+      "PFHB1",
+      "IVF",
+      "HB2",
+      "HH1",
+      "SSS1",
+      "CDCD2",
+      "CMPD2",
+      "ICCD",
+      "CMD1E"
+    ]
+  },
+  {
+    "symbol": "SGCD",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "sarcoglycan delta",
+    "hgncId": "HGNC:10807",
+    "ncbiId": "6444",
+    "aliases": [
+      "DAGD",
+      "LGMD2F",
+      "CMD1L"
+    ]
+  },
+  {
+    "symbol": "SKI",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "SKI proto-oncogene",
+    "hgncId": "HGNC:10896",
+    "ncbiId": "6497",
+    "aliases": []
+  },
+  {
+    "symbol": "SLC2A10",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "solute carrier family 2 member 10",
+    "hgncId": "HGNC:13444",
+    "ncbiId": "81031",
+    "aliases": [
+      "GLUT10",
+      "GLUT-10"
+    ]
+  },
+  {
+    "symbol": "SMAD2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "SMAD family member 2",
+    "hgncId": "HGNC:6768",
+    "ncbiId": "4087",
+    "aliases": [
+      "MADR2",
+      "JV18-1",
+      "MADH2"
+    ]
+  },
+  {
+    "symbol": "SMAD3",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "SMAD family member 3",
+    "hgncId": "HGNC:6769",
+    "ncbiId": "4088",
+    "aliases": [
+      "JV15-2",
+      "HsT17436",
+      "MADH3"
+    ]
+  },
+  {
+    "symbol": "SMAD4",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "SMAD family member 4",
+    "hgncId": "HGNC:6770",
+    "ncbiId": "4089",
+    "aliases": [
+      "DPC4",
+      "MADH4"
+    ]
+  },
+  {
+    "symbol": "SMAD9",
+    "panels": [
+      "pah"
+    ],
+    "added": false,
+    "name": "SMAD family member 9",
+    "hgncId": "HGNC:6774",
+    "ncbiId": "4093",
+    "aliases": [
+      "SMAD8",
+      "SMAD8/9",
+      "MADH6",
+      "MADH9"
+    ]
+  },
+  {
+    "symbol": "SOX17",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "SRY-box transcription factor 17",
+    "hgncId": "HGNC:18122",
+    "ncbiId": "64321",
+    "aliases": []
+  },
+  {
+    "symbol": "TBX4",
+    "panels": [
+      "pah"
+    ],
+    "added": true,
+    "name": "T-box transcription factor 4",
+    "hgncId": "HGNC:11603",
+    "ncbiId": "9496",
+    "aliases": []
+  },
+  {
+    "symbol": "TCAP",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "titin-cap",
+    "hgncId": "HGNC:11610",
+    "ncbiId": "8557",
+    "aliases": [
+      "T-cap",
+      "TELE",
+      "telethonin",
+      "CMD1N",
+      "LGMD2G"
+    ]
+  },
+  {
+    "symbol": "TECRL",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": true,
+    "name": "trans-2,3-enoyl-CoA reductase like",
+    "hgncId": "HGNC:27365",
+    "ncbiId": "253017",
+    "aliases": [
+      "GPSN2L",
+      "SRD5A2L2",
+      "DKFZp313D0829",
+      "DKFZp313B2333",
+      "TERL"
+    ]
+  },
+  {
+    "symbol": "TGFB2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "transforming growth factor beta 2",
+    "hgncId": "HGNC:11768",
+    "ncbiId": "7042",
+    "aliases": []
+  },
+  {
+    "symbol": "TGFB3",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": true,
+    "name": "transforming growth factor beta 3",
+    "hgncId": "HGNC:11769",
+    "ncbiId": "7043",
+    "aliases": [
+      "ARVD1",
+      "ARVD"
+    ]
+  },
+  {
+    "symbol": "TGFBR1",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "transforming growth factor beta receptor 1",
+    "hgncId": "HGNC:11772",
+    "ncbiId": "7046",
+    "aliases": [
+      "ALK-5",
+      "ACVRLK4",
+      "ALK5",
+      "TBRI",
+      "TBR-i",
+      "MSSE",
+      "ESS1"
+    ]
+  },
+  {
+    "symbol": "TGFBR2",
+    "panels": [
+      "aortopathy"
+    ],
+    "added": false,
+    "name": "transforming growth factor beta receptor 2",
+    "hgncId": "HGNC:11773",
+    "ncbiId": "7048",
+    "aliases": [
+      "TBRII",
+      "TBR-ii",
+      "MFS2"
+    ]
+  },
+  {
+    "symbol": "TMEM43",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "transmembrane protein 43",
+    "hgncId": "HGNC:28472",
+    "ncbiId": "79188",
+    "aliases": [
+      "MGC3222",
+      "DKFZp586G1919",
+      "LUMA",
+      "ARVD5"
+    ]
+  },
+  {
+    "symbol": "TNNC1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "troponin C1, slow skeletal and cardiac type",
+    "hgncId": "HGNC:11943",
+    "ncbiId": "7134",
+    "aliases": [
+      "TNNC"
+    ]
+  },
+  {
+    "symbol": "TNNI3",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "troponin I3, cardiac type",
+    "hgncId": "HGNC:11947",
+    "ncbiId": "7137",
+    "aliases": [
+      "TNNC1",
+      "CMH7",
+      "cTNI",
+      "CMD2A"
+    ]
+  },
+  {
+    "symbol": "TNNT2",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "troponin T2, cardiac type",
+    "hgncId": "HGNC:11949",
+    "ncbiId": "7139",
+    "aliases": [
+      "CMPD2",
+      "CMH2",
+      "CMD1D"
+    ]
+  },
+  {
+    "symbol": "TPM1",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "tropomyosin 1",
+    "hgncId": "HGNC:12010",
+    "ncbiId": "7168",
+    "aliases": [
+      "C15orf13",
+      "CMH3"
+    ]
+  },
+  {
+    "symbol": "TRDN",
+    "panels": [
+      "arrhythmia"
+    ],
+    "added": false,
+    "name": "triadin",
+    "hgncId": "HGNC:12261",
+    "ncbiId": "10345",
+    "aliases": [
+      "TRISK"
+    ]
+  },
+  {
+    "symbol": "TTN",
+    "panels": [
+      "arrhythmia",
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "titin",
+    "hgncId": "HGNC:12403",
+    "ncbiId": "7273",
+    "aliases": [
+      "CMPD4",
+      "FLJ32040",
+      "TMD",
+      "CMH9",
+      "LGMD2J",
+      "MYLK5",
+      "CMD1G"
+    ]
+  },
+  {
+    "symbol": "TTR",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "transthyretin",
+    "hgncId": "HGNC:12405",
+    "ncbiId": "7276",
+    "aliases": [
+      "HsT2651",
+      "CTS",
+      "PALB",
+      "CTS1"
+    ]
+  },
+  {
+    "symbol": "VCL",
+    "panels": [
+      "cardiomyopathy"
+    ],
+    "added": false,
+    "name": "vinculin",
+    "hgncId": "HGNC:12665",
+    "ncbiId": "7414",
+    "aliases": [
+      "VINC"
+    ]
+  }
+]

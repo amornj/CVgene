@@ -1,0 +1,52 @@
+.clinical-venn-component{margin-top:14px;animation:map-entrance .4s ease-out both}
+.clinical-venn-toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:4px}
+
+.clinical-venn-scroll{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:#c7b7d5 transparent;border-radius:5px}
+.clinical-venn-canvas{position:relative;width:100%;min-width:760px;container-type:inline-size}
+.clinical-venn-svg{position:absolute;inset:0;width:100%;height:100%}
+.clinical-circle-shape{stroke-width:1.3}
+.circle-dcm{fill:#eee7f7;fill-opacity:.70;stroke:#a18abf}
+.circle-hcm{fill:#f7efdf;fill-opacity:.65;stroke:#c4a67b}
+.circle-va{fill:#e5f1f1;fill-opacity:.60;stroke:#81a9af}
+.circle-af{fill:#f8e7f1;fill-opacity:.50;stroke:#b181a0;stroke-width:1.5;stroke-dasharray:5 4}
+.clinical-circle-title{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;gap:7px;font-size:clamp(10px,1.4cqw,13px);font-weight:600;white-space:nowrap;line-height:1.4;padding:5px 10px;border-radius:5px;z-index:2;transition:background .15s,box-shadow .15s}
+.clinical-circle-title>strong{font-size:10px;font-weight:500;padding:2px 5px;border:1px solid currentColor;border-radius:3px;opacity:.8}
+.clinical-circle-title:hover{background:#ffffffb3;box-shadow:0 2px 8px #51385b0b}
+.clinical-circle-va{color:#517e88}.clinical-circle-dcm{color:#80649c}.clinical-circle-hcm{color:#9c7a47}
+.clinical-circle-af{color:#a46789;font-size:11px;padding:3px 9px;background:#fbf0f6b3}
+.clinical-circle-af>strong{font-size:9px;border-style:dashed}
+.clinical-gene-slot{position:absolute;transform:translate(-50%,-50%);z-index:3}
+.clinical-gene-slot>.gene-chip{width:100%;height:100%;min-height:0;padding:0 3px;justify-content:center;gap:2px;border-radius:3px;font-size:10px;line-height:1;letter-spacing:-.15px;background:#ffffffc9;box-shadow:0 1px 2px #563e6a06;white-space:nowrap}
+.clinical-gene-slot>.gene-chip.selected{background:#8b70b3;color:white;border-color:#8b70b3}
+.clinical-gene-slot>.gene-chip.added{color:#c56270;border-color:#e4bdc3;background:#fff9fbde}
+.clinical-gene-slot>.gene-chip.added.selected{color:#a33c52;border-color:#c27a9c;background:#edd7e8}
+.clinical-gene-slot>.gene-chip.dimmed{opacity:.28}
+.clinical-gene-slot>.gene-chip .gene-plus{font-size:9px;line-height:1}
+.clinical-gene-slot>.gene-chip:hover,.clinical-gene-slot>.gene-chip:focus-visible{transform:none;background:#fff;border-color:#ad8fc0;box-shadow:0 2px 8px #6746731a;opacity:1}
+.clinical-gene-slot>.gene-chip.selected:hover,.clinical-gene-slot>.gene-chip.selected:focus-visible{background:#8b70b3;color:#fff;border-color:#8b70b3}
+.clinical-gene-slot>.gene-chip.added.selected:hover,.clinical-gene-slot>.gene-chip.added.selected:focus-visible{background:#edd7e8;color:#a33c52;border-color:#c27a9c}
+.clinical-gene-region-active>.gene-chip{outline:1px solid #bda5d0;outline-offset:1px}
+.clinical-region-filter{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid #eee7f2;font-size:10px;color:#9983a5}
+.clinical-region-filter select{min-width:0;flex:1;max-width:360px;padding:7px 10px;color:#806792;border:1px solid #e8deee;background:#fcfafde0;border-radius:4px;font-size:11px;cursor:pointer}
+.clinical-venn-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0;font-size:9px;color:#ad98ba;line-height:1.6}
+.clinical-venn-footer>span{display:flex;gap:5px;align-items:center}.clinical-venn-footer>span>svg{flex-shrink:0}
+.clinical-venn-footer>button{display:flex;align-items:center;gap:6px;font-size:10px;color:#688e98}
+.clinical-venn-footer>button>strong{font-size:9px;padding:2px 5px;background:#edf5f5;border-radius:3px;font-weight:500}
+.clinical-venn-footer>button:hover{text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:760px){.clinical-venn-scroll{margin:0 -4px}.clinical-region-filter{gap:8px;font-size:9px}.clinical-region-filter label{max-width:75px;line-height:1.6}.clinical-region-filter select{font-size:10px}.clinical-venn-footer{font-size:8px;align-items:flex-start;gap:8px}.clinical-venn-footer>span{max-width:48%}.clinical-venn-footer>button{font-size:9px;max-width:50%;text-align:right;gap:4px}.clinical-circle-title{font-size:12px}.clinical-circle-af{font-size:10px}.clinical-circle-title>strong{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.clinical-venn-component,.clinical-gene-slot>.gene-chip,.clinical-circle-title{animation:none;transition:none}}
+
+.af-circle-toggle{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:6px 0;flex-shrink:0;border:0;background:transparent;color:#806792;font-size:11px;font-weight:500}
+
+.af-circle-toggle:hover{background:transparent;color:#6c527f}
+.af-toggle-track{display:block;width:28px;height:16px;border-radius:10px;background:#e1d9e9;padding:2px;transition:background .15s}
+.af-toggle-track>i{display:block;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #60447826;transition:transform .15s}
+.af-circle-toggle[aria-pressed=true]{color:#a46789}
+.af-circle-toggle[aria-pressed=true] .af-toggle-track{background:#b181a0}
+.af-circle-toggle[aria-pressed=true] .af-toggle-track>i{transform:translateX(12px)}
+
+@media(max-width:760px){.af-circle-toggle{min-height:44px;padding:7px 0;font-size:10px;gap:6px}}
+@media(prefers-reduced-motion:reduce){.af-circle-toggle,.af-toggle-track,.af-toggle-track>i{transition:none}}
+
+.clinical-af-focus-label{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#a46789;font-size:clamp(9px,1.2cqw,11px);line-height:1.5;pointer-events:none}

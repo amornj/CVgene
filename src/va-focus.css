@@ -1,0 +1,33 @@
+.va-focus-scope{font-size:11px;line-height:1.75;color:#796984;margin:12px 0}
+.va-focus-scope>p{margin:0}
+.va-focus-scope strong{font-weight:600;color:#665070}
+.va-focus-scope summary,.va-mechanism summary{display:flex;align-items:center;gap:5px;list-style:none;cursor:pointer;min-height:30px;color:#6d547e;font-size:10px}
+.va-focus-scope details[open] summary>svg,.va-mechanism details[open] summary>svg{transform:rotate(180deg)}
+.va-focus-scope details>p{max-width:700px;margin:8px 0}
+.va-source-links{display:grid;gap:8px;margin:10px 0 5px}
+.va-source-links>a{font-size:10px;line-height:1.7;color:#705987;text-decoration:underline;text-underline-offset:3px}
+.va-source-links svg{margin-left:3px;vertical-align:middle}
+.va-mechanism-section{border-top:1px solid #e7dfed;padding-top:18px}
+.va-mechanism-section>h3{display:flex;gap:6px;align-items:center}
+.va-mechanism-section .va-family-label{font-size:10px;line-height:1.7;color:#7e6a8b;margin:8px 0 12px}
+.va-mechanism-section .va-outside-focus{font-size:10px;line-height:1.7;color:#776785;margin:8px 0 12px}
+.va-mechanism{padding:12px 0;border-top:1px solid #eee7f2}
+.va-mechanism-focused{border-left:2px solid #b4a1c7;padding-left:10px}
+.va-mechanism h4{font-size:12px;font-weight:600;line-height:1.6;color:#624a73;margin:0 0 7px}
+.va-mechanism>p,.va-mechanism details>p{font-size:12px;line-height:1.8;color:#6a5b73;margin:6px 0}
+.va-mechanism .va-mechanism-inheritance{font-size:10px;color:#806d8c}
+.va-mechanism-section .va-mechanism-foot{font-size:10px;line-height:1.75;color:#87758f;margin:10px 0 0}
+@media(max-width:760px){.va-focus-scope{font-size:11px}.va-focus-scope summary,.va-mechanism summary{min-height:36px;font-size:11px}}
+
+
+.map-toggle-stack{display:flex;flex-direction:column;align-items:flex-start;gap:0;flex-shrink:0;min-width:145px}
+.map-highlight-context{flex:1;min-width:0;padding-top:5px}
+.map-highlight-context .va-focus-scope{margin:0;max-width:620px}
+.map-highlight-toggle[aria-pressed=true]{color:#7862ab}
+.map-highlight-toggle[aria-pressed=true] .af-toggle-track{background:#9880b8}
+.phenotype-highlight-toggle{gap:6px}
+.va-subtype-select{position:relative;display:block;max-width:185px;margin:3px 0 5px}
+.va-subtype-select select{appearance:none;background:transparent;border:1px solid #e1d8e8;border-radius:4px;color:#6a527b;font-size:11px;line-height:1.5;padding:6px 24px 6px 9px;min-height:34px;max-width:185px}
+.va-subtype-select>svg{position:absolute;right:7px;top:50%;transform:translateY(-50%);pointer-events:none;color:#8a739d}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){.clinical-venn-toolbar{flex-direction:column;align-items:stretch}.map-toggle-stack{order:0;align-self:flex-end}.map-highlight-context{order:1;padding-top:0}.va-subtype-select select{min-height:40px;font-size:12px}}

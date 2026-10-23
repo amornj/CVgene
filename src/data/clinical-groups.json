@@ -1,0 +1,538 @@
+{
+  "ACTC1": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "ACTN2": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "BAG3": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    }
+  },
+  "DES": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Desmin-related myopathy",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "DSP": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "FLNC": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "Truncating variants are relevant to dilated/arrhythmogenic disease; HCM often involves different missense mechanisms.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Variant-specific HCM / myopathy",
+      "note": "HCM association is variant-specific; do not transfer truncating-variant DCM risk to every missense variant.",
+      "reference": "hcm"
+    },
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "JPH2": {
+    "dcm": {
+      "kind": "Inheritance-specific evidence",
+      "note": "DCM evidence differs by inheritance. Published abstract and ClinGen/preprint records conflict on AD versus AR grading; confirm the current gene-disease curation.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "LMNA": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "MYH7": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    },
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "HCM-associated VA context",
+      "note": "Ventricular arrhythmia can occur in gene-positive HCM. This is a structural HCM context, not an isolated channelopathy or a gene-alone sudden-death risk assignment. Use clinical HCM risk markers.",
+      "reference": "hcmva"
+    }
+  },
+  "NEXN": {
+    "dcm": {
+      "kind": "Updated evidence",
+      "note": "DCM evidence was upgraded in the 2026 reappraisal; the PDF\u2019s second-priority label is historical panel provenance.",
+      "reference": "dcm2026"
+    }
+  },
+  "PLN": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "RBM20": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "va2026"
+    }
+  },
+  "SCN5A": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "af": {
+      "kind": "Familial AF focus",
+      "note": "Consensus-supported familial AF evaluation; mechanism and clinical context are essential.",
+      "reference": "afconsensus"
+    },
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "TNNC1": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "TNNI3": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "Both dominant and recessive DCM were rated Strong in the 2026 assessment.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "TNNT2": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "TPM1": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    },
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "TTN": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "Interpret truncating variants in relevant cardiac-expressed exons; most rare missense changes remain uncertain.",
+      "reference": "dcm2026"
+    },
+    "af": {
+      "kind": "Familial AF focus",
+      "note": "Relevant truncating variants may associate with early AF before overt DCM; this is not evidence for all TTN variants.",
+      "reference": "afconsensus"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Relevant pathogenic truncating variants can link AF, DCM, and ventricular arrhythmia. Follow-up of TTN-positive AF patients documented ventricular events; this does not make every TTN variant a high-risk genotype.",
+      "reference": "ttnafva"
+    }
+  },
+  "VCL": {
+    "dcm": {
+      "kind": "Intrinsic cardiomyopathy",
+      "note": "DCM association; inheritance and variant mechanism must match.",
+      "reference": "dcm2026"
+    }
+  },
+  "DMD": {
+    "dcm": {
+      "kind": "Dystrophinopathy",
+      "note": "Cardiac-predominant or syndromic DCM; validated copy-number testing is required.",
+      "reference": "dmd"
+    }
+  },
+  "ALPK3": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "Dominant loss-of-function and recessive disease have different presentations and evidence.",
+      "reference": "hcm"
+    }
+  },
+  "CACNA1C": {
+    "hcm": {
+      "kind": "Timothy-spectrum LVH",
+      "note": "Timothy-spectrum LVH is distinct from an isolated sarcomeric HCM diagnosis.",
+      "reference": "hcm"
+    },
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "CSRP3": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "FHL1": {
+    "hcm": {
+      "kind": "FHL1-related myopathy",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "FHOD3": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "GLA": {
+    "hcm": {
+      "kind": "Fabry LVH phenocopy",
+      "note": "A distinct cause of increased wall thickness; distinguish from primary sarcomeric HCM.",
+      "reference": "hcm"
+    }
+  },
+  "LAMP2": {
+    "hcm": {
+      "kind": "Danon LVH phenocopy",
+      "note": "A distinct cause of increased wall thickness; distinguish from primary sarcomeric HCM.",
+      "reference": "hcm"
+    }
+  },
+  "MYBPC3": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    },
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "HCM-associated VA context",
+      "note": "Ventricular arrhythmia can occur in gene-positive HCM. This is a structural HCM context, not an isolated channelopathy or a gene-alone sudden-death risk assignment. Use clinical HCM risk markers.",
+      "reference": "hcmva"
+    }
+  },
+  "MYL2": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "MYL3": {
+    "hcm": {
+      "kind": "Intrinsic HCM",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "PRKAG2": {
+    "hcm": {
+      "kind": "Glycogen-storage LVH phenocopy",
+      "note": "A distinct cause of increased wall thickness; distinguish from primary sarcomeric HCM.",
+      "reference": "hcm"
+    }
+  },
+  "PTPN11": {
+    "hcm": {
+      "kind": "RASopathy-associated LVH",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "RAF1": {
+    "hcm": {
+      "kind": "RASopathy-associated LVH",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "RIT1": {
+    "hcm": {
+      "kind": "RASopathy-associated LVH",
+      "note": "HCM/LVH association in the 2025 reappraisal; disease mechanism matters.",
+      "reference": "hcm"
+    }
+  },
+  "TTR": {
+    "hcm": {
+      "kind": "ATTR amyloid LVH phenocopy",
+      "note": "A distinct cause of increased wall thickness; distinguish from primary sarcomeric HCM.",
+      "reference": "hcm"
+    }
+  },
+  "KCNQ1": {
+    "af": {
+      "kind": "Familial AF focus",
+      "note": "Consensus-supported familial AF evaluation; mechanism and clinical context are essential.",
+      "reference": "afconsensus"
+    },
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "MYL4": {
+    "af": {
+      "kind": "Familial AF focus",
+      "note": "Atrial myopathy / early AF: selected dominant missense or biallelic loss-of-function variants; establish mechanism and phase. Atrial-predominant placement is not a guarantee of absent ventricular risk.",
+      "reference": "myl4"
+    }
+  },
+  "PKP2": {
+    "af": {
+      "kind": "Cardiomyopathy-associated AF",
+      "note": "Pathogenic variants were observed in an early-onset AF clinic cohort; not proof of isolated monogenic AF for every variant.",
+      "reference": "afclinic"
+    },
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "arvcvalidity"
+    }
+  },
+  "KCNH2": {
+    "af": {
+      "kind": "Short-QT variant context",
+      "note": "AF can accompany selected short-QT mechanisms; other variants may cause different electrical phenotypes.",
+      "reference": "afconsensus"
+    },
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "KCNJ2": {
+    "af": {
+      "kind": "Short-QT variant context",
+      "note": "AF can accompany selected short-QT mechanisms; other variants may cause different electrical phenotypes.",
+      "reference": "afconsensus"
+    },
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "cpvtvalidity"
+    }
+  },
+  "HCN4": {
+    "af": {
+      "kind": "Sinus-node / AF context",
+      "note": "Rare familial sinus-node dysfunction with tachycardia\u2013bradycardia or AF. This is not a generic AF risk assignment. Selected VA membership is not assigned; rare variant-specific ventricular arrhythmias have also been reported.",
+      "reference": "hcn4af"
+    }
+  },
+  "CALM1": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "CALM2": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "CALM3": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "lqts"
+    }
+  },
+  "CASQ2": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "cpvtvalidity"
+    }
+  },
+  "KCNE1": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Biallelic Jervell\u2013Lange-Nielsen disease is established; monoallelic isolated congenital LQTS evidence is limited.",
+      "reference": "lqts"
+    }
+  },
+  "RYR2": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "cpvtvalidity"
+    }
+  },
+  "TECRL": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "cpvtvalidity"
+    }
+  },
+  "TRDN": {
+    "va": {
+      "kind": "Electrical / syndromic VA",
+      "note": "Ventricular arrhythmia relevance depends on the channelopathy, variant mechanism, and inheritance.",
+      "reference": "cpvtvalidity"
+    }
+  },
+  "DSC2": {
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "arvcvalidity"
+    }
+  },
+  "DSG2": {
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "arvcvalidity"
+    }
+  },
+  "JUP": {
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "arvcvalidity"
+    }
+  },
+  "TMEM43": {
+    "va": {
+      "kind": "Cardiomyopathy-associated VA",
+      "note": "Structural disease with ventricular arrhythmia relevance; assess phenotype and variant-specific risk.",
+      "reference": "arvcvalidity"
+    }
+  }
+}

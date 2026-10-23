@@ -1,0 +1,625 @@
+{
+  "reviewed": "2026-10-23",
+  "scope": "Selected catalog associations, frozen to the cited publications. Focus sets are not exhaustive panels, individual event-risk categories or live ClinGen classifications.",
+  "sources": {
+    "arvc2021": {
+      "title": "ARVC gene validity reappraisal · 2021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33831308/",
+      "detail": "Six definitive and two moderate ARVC associations; not the whole ACM spectrum."
+    },
+    "consensus2022": {
+      "title": "International cardiac genetic testing consensus · 2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9347209/",
+      "detail": "LQTS, SQTS, CPVT, Brugada and broader ACM testing; syndrome-specific mechanisms."
+    },
+    "lqts2020": {
+      "title": "Congenital LQTS gene reappraisal · 2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31983240/",
+      "detail": "Typical versus atypical / syndromic LQTS and limited or disputed candidates."
+    },
+    "cpvtsqts2021": {
+      "title": "CPVT and short-QT gene reappraisal · 2021/2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9009401/",
+      "detail": "Explicit CPVT and SQTS validity sets; variant and phenotype specificity."
+    },
+    "arvcOverview": {
+      "title": "GeneReviews · ARVC overview",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1131/",
+      "detail": "Desmosomal disease, inheritance and left ventricular DSP involvement."
+    },
+    "atsOverview": {
+      "title": "GeneReviews · Andersen–Tawil syndrome",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1264/",
+      "detail": "KCNJ2, bidirectional VT, T–U patterns, periodic paralysis and skeletal clues."
+    },
+    "cpvtOverview": {
+      "title": "GeneReviews · CPVT",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1289/",
+      "detail": "RYR2 and calcium-handling mechanisms; atypical and overlapping phenotypes."
+    },
+    "dcmOverview": {
+      "title": "GeneReviews · DCM overview",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1309/",
+      "detail": "Structural cardiomyopathy contexts and gene-specific assessment."
+    },
+    "lmnaOverview": {
+      "title": "GeneReviews · LMNA-related DCM",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1674/",
+      "detail": "Conduction disease, arrhythmia and cardiomyopathy."
+    },
+    "hcmGuideline": {
+      "title": "AHA/ACC HCM guideline · 2024",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.02.014",
+      "detail": "Assess clinical HCM risk markers; genotype alone does not assign individual sudden-death risk."
+    },
+    "brugada2018": {
+      "title": "Brugada gene validity reappraisal · 2018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29959160/",
+      "detail": "SCN5A is the established monogenic Brugada association; historical candidates differ."
+    }
+  },
+  "groups": [
+    {
+      "id": "acm",
+      "label": "ACM / ARVC",
+      "description": "Structural arrhythmogenic cardiomyopathy, including right, left and biventricular disease.",
+      "scope": "The 2021 ARVC set contains PKP2, DSP, DSG2, DSC2, JUP and TMEM43 (definitive), and DES / PLN (moderate). FLNC and LMNA are included for broader ACM testing in the 2022 consensus, not assigned the same ARVC classification. DSP often involves the left ventricle. Early electrical disease can precede visible structural abnormalities.",
+      "sources": [
+        "arvc2021",
+        "consensus2022",
+        "arvcOverview"
+      ]
+    },
+    {
+      "id": "lqts",
+      "label": "Long QT",
+      "description": "Selected congenital long-QT contexts, including Timothy syndrome, calmodulinopathy, JLNS and triadin overlap.",
+      "scope": "KCNQ1, KCNH2 and SCN5A cover typical LQTS; other highlighted genes have specific syndromic / atypical contexts. KCNE1 is included for biallelic Jervell–Lange-Nielsen disease, not as an equally established monoallelic isolated-LQTS cause. Andersen–Tawil is shown separately. This focus does not cover acquired QT prolongation or every reported candidate.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "id": "sqts",
+      "label": "Short QT",
+      "description": "Selected gain-of-function potassium-channel variants can shorten repolarization.",
+      "scope": "The 2022 consensus lists KCNH2 as definitive, KCNQ1 as strong and KCNJ2 as moderate for SQTS. These labels do not establish pathogenicity for an arbitrary variant. SLC4A3 is outside this catalog, so this is incomplete SQTS coverage. Historical calcium-channel candidates are not promoted into this set.",
+      "sources": [
+        "cpvtsqts2021",
+        "consensus2022"
+      ]
+    },
+    {
+      "id": "cpvt",
+      "label": "CPVT",
+      "description": "Catecholaminergic polymorphic ventricular tachycardia and related calcium-handling overlap phenotypes.",
+      "scope": "The selected set follows the seven genes with moderate-to-definitive evidence in the 2021/2022 reappraisal. Typical RYR2 / CASQ2 disease differs from rarer calmodulin, TECRL and triadin contexts. KCNJ2-related bidirectional VT is kept under Andersen–Tawil rather than equated with typical CPVT; some reference tables group these mimics differently.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "id": "brugada",
+      "label": "Brugada",
+      "description": "SCN5A-related Brugada syndrome: selected loss-of-function sodium-channel mechanisms.",
+      "scope": "This focus uses the established SCN5A association. Historical non-SCN5A Brugada candidates retained in the PDF are not promoted here. A Brugada diagnosis requires the ECG and clinical context.",
+      "sources": [
+        "brugada2018",
+        "consensus2022"
+      ]
+    },
+    {
+      "id": "ats",
+      "label": "Andersen–Tawil",
+      "description": "KCNJ2-related electrical disease, often with prominent U waves, ventricular ectopy / bidirectional VT and extracardiac clues.",
+      "scope": "Loss-of-function Kir2.1 mechanisms differ from selected KCNJ2 gain-of-function short-QT variants. QT / QU and T–U morphology need careful interpretation; this focus is not labeled as typical isolated LQTS or ARVC.",
+      "sources": [
+        "atsOverview",
+        "consensus2022"
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "symbol": "PKP2",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Desmosomal dysfunction impairs cardiomyocyte adhesion and electrical / mechanical coupling.",
+      "inheritance": "Usually autosomal dominant.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "Electrical abnormalities may precede overt ventricular structural changes.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "DSP",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Desmoplakin dysfunction disrupts desmosomal anchoring; myocardial injury and fibrosis can accompany ventricular arrhythmia.",
+      "inheritance": "Autosomal dominant cardiomyopathy; biallelic disease can cause Carvajal syndrome.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "Left-predominant or biventricular disease is common; do not equate every DSP phenotype with isolated RV disease.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "DSG2",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Desmoglein-2 dysfunction affects desmosomal cell adhesion.",
+      "inheritance": "Autosomal dominant or recessive, depending on variant and disease context.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "Right, left or biventricular involvement can occur.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "DSC2",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Desmocollin-2 dysfunction affects desmosomal cell adhesion.",
+      "inheritance": "Autosomal dominant or recessive, depending on variant and disease context.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "Review zygosity and the structural phenotype.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "JUP",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Plakoglobin dysfunction affects desmosomal adhesion in myocardium and skin.",
+      "inheritance": "Classic Naxos disease is autosomal recessive with biallelic pathogenic variants.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "A single JUP finding does not establish Naxos or predict a structural phenotype.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "TMEM43",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Variant-specific nuclear-envelope / cardiomyocyte dysfunction is associated with arrhythmogenic cardiomyopathy.",
+      "inheritance": "Autosomal dominant; strongest clinical context includes selected variants such as p.Ser358Leu.",
+      "evidence": "Definitive ARVC association in the 2021 reappraisal.",
+      "note": "Do not generalize the p.Ser358Leu evidence to every TMEM43 variant.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "PLN",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Selected variants disturb phospholamban-mediated calcium handling in a cardiomyopathy context.",
+      "inheritance": "Autosomal dominant in established disease contexts.",
+      "evidence": "Moderate ARVC association in the 2021 reappraisal.",
+      "note": "This is structural ACM / DCM context, not membership in the CPVT set.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "DES",
+      "context": "acm",
+      "family": "structural",
+      "label": "ACM / ARVC",
+      "mechanism": "Desmin-related cytoskeletal dysfunction can cause cardiomyopathy, conduction disease and skeletal myopathy.",
+      "inheritance": "Autosomal dominant or recessive, depending on the disease mechanism.",
+      "evidence": "Moderate ARVC association in the 2021 reappraisal.",
+      "note": "ARVC evidence is more limited than the definitive desmosomal associations; review the actual phenotype.",
+      "sources": [
+        "arvc2021",
+        "arvcOverview"
+      ]
+    },
+    {
+      "symbol": "FLNC",
+      "context": "acm",
+      "family": "structural",
+      "label": "Broader ACM / arrhythmogenic DCM",
+      "mechanism": "Truncating variants can cause an arrhythmogenic structural cardiomyopathy; other variant mechanisms can cause different myopathies.",
+      "inheritance": "Usually autosomal dominant in this context.",
+      "evidence": "Included in broader ACM testing in the 2022 consensus.",
+      "note": "This broader ACM context is not the same as a definitive ARVC gene classification.",
+      "sources": [
+        "consensus2022",
+        "dcmOverview"
+      ]
+    },
+    {
+      "symbol": "LMNA",
+      "context": "acm",
+      "family": "structural",
+      "label": "Broader ACM / arrhythmogenic DCM",
+      "mechanism": "Lamin A/C dysfunction can cause conduction disease and atrial / ventricular arrhythmia before marked ventricular dilation.",
+      "inheritance": "Autosomal dominant in the usual cardiac context.",
+      "evidence": "Included in broader ACM testing in the 2022 consensus.",
+      "note": "This broader ACM context is not the same as a definitive ARVC gene classification.",
+      "sources": [
+        "consensus2022",
+        "lmnaOverview"
+      ]
+    },
+    {
+      "symbol": "KCNQ1",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "LQT1 / long QT",
+      "mechanism": "Loss of function reduces IKs potassium current and delays repolarization.",
+      "inheritance": "Usually autosomal dominant. Biallelic KCNQ1 disease can cause Jervell–Lange-Nielsen syndrome.",
+      "evidence": "Definitive typical congenital-LQTS association in the 2020 reappraisal.",
+      "note": "Different gain-of-function variants can have a short-QT phenotype.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNQ1",
+      "context": "sqts",
+      "family": "electrical",
+      "label": "Short QT",
+      "mechanism": "Selected gain-of-function variants increase IKs potassium current and shorten repolarization.",
+      "inheritance": "Autosomal dominant in reported SQTS contexts.",
+      "evidence": "Strong SQTS association in the 2022 consensus.",
+      "note": "Evidence is highly variant specific; a gene label or predicted gain of function alone does not establish SQTS.",
+      "sources": [
+        "cpvtsqts2021",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNH2",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "LQT2 / long QT",
+      "mechanism": "Loss of function reduces IKr potassium current and delays repolarization.",
+      "inheritance": "Usually autosomal dominant.",
+      "evidence": "Definitive typical congenital-LQTS association in the 2020 reappraisal.",
+      "note": "Different gain-of-function variants can have a short-QT phenotype.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNH2",
+      "context": "sqts",
+      "family": "electrical",
+      "label": "Short QT",
+      "mechanism": "Selected gain-of-function variants increase IKr potassium current and shorten repolarization.",
+      "inheritance": "Autosomal dominant in reported SQTS contexts.",
+      "evidence": "Definitive SQTS association in the 2022 consensus.",
+      "note": "Evidence is highly variant specific; a gene label or predicted gain of function alone does not establish SQTS.",
+      "sources": [
+        "cpvtsqts2021",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "SCN5A",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "LQT3 / long QT",
+      "mechanism": "Selected gain-of-function variants increase persistent / late sodium current and delay repolarization.",
+      "inheritance": "Usually autosomal dominant.",
+      "evidence": "Definitive typical congenital-LQTS association in the 2020 reappraisal.",
+      "note": "Other SCN5A mechanisms cause Brugada, conduction disease or cardiomyopathy; overlap variants exist.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "SCN5A",
+      "context": "brugada",
+      "family": "electrical",
+      "label": "Brugada syndrome",
+      "mechanism": "Selected loss-of-function mechanisms reduce cardiac sodium-channel availability or current.",
+      "inheritance": "Autosomal dominant susceptibility with variable expression.",
+      "evidence": "Established monogenic Brugada association; non-SCN5A candidates differ.",
+      "note": "Opposing channel effects cannot be inferred from the gene name; some variants have overlapping effects.",
+      "sources": [
+        "brugada2018",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "SCN5A",
+      "context": "structural",
+      "family": "structural",
+      "label": "DCM / arrhythmic cardiomyopathy",
+      "mechanism": "Selected sodium-channel variants are associated with conduction / arrhythmic disease and ventricular dilation.",
+      "inheritance": "Usually autosomal dominant in reported DCM contexts.",
+      "evidence": "Separate DCM context; no blanket gain- or loss-of-function rule.",
+      "note": "SCN5A illustrates that electrical and structural disease can overlap in one gene. This is not an ARVC assignment.",
+      "sources": [
+        "dcmOverview",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNJ2",
+      "context": "ats",
+      "family": "electrical",
+      "label": "Andersen–Tawil syndrome",
+      "mechanism": "Loss of function, often dominant-negative, reduces Kir2.1 / IK1 potassium-channel activity.",
+      "inheritance": "Autosomal dominant in classic Andersen–Tawil syndrome.",
+      "evidence": "Established syndromic association; distinct from limited isolated-LQTS evidence.",
+      "note": "Ventricular ectopy / bidirectional VT, prominent U waves and periodic paralysis can occur. Cardiomyopathy is not required; absence of physical clues does not exclude disease.",
+      "sources": [
+        "atsOverview",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNJ2",
+      "context": "sqts",
+      "family": "electrical",
+      "label": "Short QT",
+      "mechanism": "Selected gain-of-function variants increase Kir2.1 / IK1 current and shorten repolarization.",
+      "inheritance": "Autosomal dominant in reported SQTS contexts.",
+      "evidence": "Moderate SQTS association in the 2022 consensus.",
+      "note": "This mechanism differs from loss-of-function Andersen–Tawil disease; do not apply the SQTS label to all KCNJ2 variants.",
+      "sources": [
+        "cpvtsqts2021",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "CALM1",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Calmodulinopathy / long QT",
+      "mechanism": "Altered calcium sensing can impair calcium-dependent inactivation of the L-type calcium channel and prolong repolarization.",
+      "inheritance": "Autosomal dominant; often de novo in severe presentations.",
+      "evidence": "Definitive atypical-LQTS association in the 2020 reappraisal.",
+      "note": "Variant-specific calmodulin disease can have long-QT or CPVT-like overlap features.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "CALM1",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "Calmodulinopathy / CPVT overlap",
+      "mechanism": "Abnormal calcium sensing / channel regulation can disturb sarcoplasmic-reticulum calcium release.",
+      "inheritance": "Autosomal dominant.",
+      "evidence": "Moderate CPVT association in the 2021/2022 reappraisal.",
+      "note": "These rare calmodulin phenotypes need specialist review rather than a universal gain- or loss-of-function label.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "CALM2",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Calmodulinopathy / long QT",
+      "mechanism": "Altered calcium sensing can impair calcium-dependent inactivation of the L-type calcium channel and prolong repolarization.",
+      "inheritance": "Autosomal dominant; often de novo in severe presentations.",
+      "evidence": "Definitive atypical-LQTS association in the 2020 reappraisal.",
+      "note": "Variant-specific calmodulin disease can have long-QT or CPVT-like overlap features.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "CALM2",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "Calmodulinopathy / CPVT overlap",
+      "mechanism": "Abnormal calcium sensing / channel regulation can disturb sarcoplasmic-reticulum calcium release.",
+      "inheritance": "Autosomal dominant.",
+      "evidence": "Moderate CPVT association in the 2021/2022 reappraisal.",
+      "note": "These rare calmodulin phenotypes need specialist review rather than a universal gain- or loss-of-function label.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "CALM3",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Calmodulinopathy / long QT",
+      "mechanism": "Altered calcium sensing can impair calcium-dependent inactivation of the L-type calcium channel and prolong repolarization.",
+      "inheritance": "Autosomal dominant; often de novo in severe presentations.",
+      "evidence": "Definitive atypical-LQTS association in the 2020 reappraisal.",
+      "note": "Variant-specific calmodulin disease can have long-QT or CPVT-like overlap features.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "CALM3",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "Calmodulinopathy / CPVT overlap",
+      "mechanism": "Abnormal calcium sensing / channel regulation can disturb sarcoplasmic-reticulum calcium release.",
+      "inheritance": "Autosomal dominant.",
+      "evidence": "Moderate CPVT association in the 2021/2022 reappraisal.",
+      "note": "These rare calmodulin phenotypes need specialist review rather than a universal gain- or loss-of-function label.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "CACNA1C",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Timothy syndrome / long QT",
+      "mechanism": "Selected gain-of-function variants increase or prolong L-type calcium current.",
+      "inheritance": "Usually autosomal dominant; often de novo in classic Timothy syndrome.",
+      "evidence": "Definitive Timothy syndrome; moderate isolated-LQTS evidence in the 2020/2022 sources.",
+      "note": "Syndromic context and the relevant alternative exon matter. Historical SQTS / Brugada claims are not included in those focus sets.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "KCNE1",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Jervell–Lange-Nielsen / long QT",
+      "mechanism": "Loss of IKs-channel function in biallelic disease can prolong QT and affect inner-ear potassium homeostasis.",
+      "inheritance": "Autosomal recessive for Jervell–Lange-Nielsen syndrome.",
+      "evidence": "Established biallelic JLNS; limited monoallelic isolated-LQTS evidence in the cited sources.",
+      "note": "Acquired QT susceptibility and a single recessive allele are separate interpretation contexts.",
+      "sources": [
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "TRDN",
+      "context": "lqts",
+      "family": "electrical",
+      "label": "Triadin knockout / LQTS–CPVT overlap",
+      "mechanism": "Biallelic loss of triadin disrupts the calcium-release complex and can cause QT prolongation with exertional arrhythmia.",
+      "inheritance": "Autosomal recessive; assess both alleles and phase.",
+      "evidence": "Strong atypical-LQTS evidence in the 2020/2022 sources.",
+      "note": "Use the overlap phenotype rather than treating this as typical isolated LQTS.",
+      "sources": [
+        "lqts2020",
+        "consensus2022"
+      ]
+    },
+    {
+      "symbol": "TRDN",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "Triadin knockout / CPVT overlap",
+      "mechanism": "Biallelic loss of triadin disrupts calcium-release organization.",
+      "inheritance": "Autosomal recessive; assess both alleles and phase.",
+      "evidence": "Definitive CPVT association in the 2021/2022 reappraisal.",
+      "note": "QT prolongation and skeletal muscle findings can coexist.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "RYR2",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "CPVT",
+      "mechanism": "Typical CPVT variants increase inappropriate RyR2 calcium release under adrenergic stress.",
+      "inheritance": "Usually autosomal dominant.",
+      "evidence": "Definitive CPVT association in the 2021/2022 reappraisal.",
+      "note": "Loss-of-function RYR2 variants can cause a different calcium-release deficiency syndrome; do not label all RYR2 disease as typical CPVT.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "CASQ2",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "CPVT",
+      "mechanism": "Reduced calsequestrin function disrupts calcium storage / buffering and RyR2 regulation.",
+      "inheritance": "Usually autosomal recessive; selected dominant variants require separate review.",
+      "evidence": "Definitive recessive CPVT association in the 2021/2022 reappraisal.",
+      "note": "One recessive allele does not establish biallelic disease; some heterozygous variants have distinct evidence.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "TECRL",
+      "context": "cpvt",
+      "family": "electrical",
+      "label": "CPVT / QT-prolongation overlap",
+      "mechanism": "Biallelic dysfunction disturbs intracellular calcium handling; the precise mechanism is still being investigated.",
+      "inheritance": "Autosomal recessive; assess both alleles and phase.",
+      "evidence": "Definitive CPVT association in the 2021/2022 reappraisal.",
+      "note": "QT prolongation may accompany the phenotype; this does not make TECRL an established typical isolated-LQTS gene.",
+      "sources": [
+        "cpvtsqts2021",
+        "cpvtOverview"
+      ]
+    },
+    {
+      "symbol": "TTN",
+      "context": "structural",
+      "family": "structural",
+      "label": "Structural cardiomyopathy-associated VA",
+      "mechanism": "Selected truncating variants impair sarcomere function in a DCM context.",
+      "inheritance": "Usually autosomal dominant in these cardiac contexts.",
+      "evidence": "Existing selected structural-VA context; not an isolated channelopathy classification.",
+      "note": "Interpret transcript, exon usage and phenotype; this is not a typical ARVC assignment. Genotype alone does not assign individual sudden-death risk.",
+      "sources": [
+        "dcmOverview"
+      ]
+    },
+    {
+      "symbol": "RBM20",
+      "context": "structural",
+      "family": "structural",
+      "label": "Structural cardiomyopathy-associated VA",
+      "mechanism": "Disease-associated variants can disturb cardiac RNA splicing and cause DCM with arrhythmic disease.",
+      "inheritance": "Usually autosomal dominant in these cardiac contexts.",
+      "evidence": "Existing selected structural-VA context; not an isolated channelopathy classification.",
+      "note": "Variant domain and phenotype matter; this is not a typical ARVC assignment. Genotype alone does not assign individual sudden-death risk.",
+      "sources": [
+        "dcmOverview"
+      ]
+    },
+    {
+      "symbol": "MYH7",
+      "context": "structural",
+      "family": "structural",
+      "label": "Structural cardiomyopathy-associated VA",
+      "mechanism": "Sarcomeric disease can produce structural HCM or DCM, with variant-dependent effects.",
+      "inheritance": "Usually autosomal dominant in these cardiac contexts.",
+      "evidence": "Existing selected structural-VA context; not an isolated channelopathy classification.",
+      "note": "The selected VA membership is HCM-associated. Use clinical HCM risk markers. Genotype alone does not assign individual sudden-death risk.",
+      "sources": [
+        "hcmGuideline"
+      ]
+    },
+    {
+      "symbol": "MYBPC3",
+      "context": "structural",
+      "family": "structural",
+      "label": "Structural cardiomyopathy-associated VA",
+      "mechanism": "Sarcomeric dysfunction can produce structural HCM.",
+      "inheritance": "Usually autosomal dominant in these cardiac contexts.",
+      "evidence": "Existing selected structural-VA context; not an isolated channelopathy classification.",
+      "note": "The selected VA membership is HCM-associated. Use clinical HCM risk markers. Genotype alone does not assign individual sudden-death risk.",
+      "sources": [
+        "hcmGuideline"
+      ]
+    }
+  ]
+}
