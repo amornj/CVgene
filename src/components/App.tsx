@@ -201,12 +201,20 @@ export default function App() {
     history.replaceState({}, '', url);
   }
 
+  // Selecting a gene always lands on By organ involvement so the symbol is
+  // visible in context on the diagram. Clearing the transient search/filters
+  // stops them hijacking the view with a results list instead.
   const choose = useCallback((gene: Gene, fromFrequency = false, syndrome: string | null = null) => {
     setSelected(gene);
     setInspectorMode('gene');
     setFrequencyBack(fromFrequency);
     setInspectorOpen(true);
     setTooltip(null);
+    setView('map');
+    setPanel('all');
+    setScope('all');
+    setQuery('');
+    setActiveRegion(null);
     syncUrl(gene.symbol);
   }, []);
 
