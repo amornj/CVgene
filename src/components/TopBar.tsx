@@ -87,15 +87,11 @@ export function SearchBar({query, onChange, inputRef, onSubmit, onExample}: Sear
 
 export function ViewToolbar({
   view,
-  scope,
   onView,
-  onScope,
   onExport,
 }: {
   view: string;
-  scope: string;
   onView: (view: 'map' | 'list' | 'syndromes') => void;
-  onScope: (scope: string) => void;
   onExport: () => void;
 }) {
   return (
@@ -112,15 +108,6 @@ export function ViewToolbar({
         </button>
       </div>
       <div className="toolbar-actions">
-        <label className="scope-select">
-          <span className="sr-only">Filter by panel status</span>
-          <select value={scope} onChange={(e) => onScope(e.target.value)}>
-            <option value="all">All genes</option>
-            <option value="added">Added genes</option>
-            <option value="shared">Shared genes</option>
-            <option value="baseline">Original genes</option>
-          </select>
-        </label>
         <button type="button" className="button-secondary" onClick={onExport}>
           <ArrowUpRight size={15} />
           <span>Export CSV</span>

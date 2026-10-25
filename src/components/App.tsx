@@ -340,14 +340,9 @@ export default function App() {
 
             <ViewToolbar
               view={view}
-              scope={scope}
               onView={(v) => {
                 setView(v);
                 if (v === 'map') setPanel('all');
-              }}
-              onScope={(s) => {
-                setScope(s as Scope);
-                setActiveRegion(null);
               }}
               onExport={exportCsv}
             />
