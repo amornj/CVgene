@@ -13,7 +13,7 @@ function SyndromeSources({syndrome}:{syndrome:ExternalSyndrome}){
 }
 
 /** A single syndrome's full external-phenotype record, for the right pane. */
-export function SyndromeDetail({syndrome, gene}:{syndrome:ExternalSyndrome;gene:Gene|undefined}){
+export function SyndromeDetail({syndrome, gene, onGeneOpen}:{syndrome:ExternalSyndrome;gene:Gene|undefined;onGeneOpen?:(gene:Gene)=>void}){
  return <div className="syndrome-detail syndrome-detail--standalone">
   <div className="syndrome-detail-head">
    <span className="inspector-kicker"><PersonStanding size={14} aria-hidden="true"/>External phenotype &amp; syndrome clues</span>
@@ -24,7 +24,7 @@ export function SyndromeDetail({syndrome, gene}:{syndrome:ExternalSyndrome;gene:
   <p className="phenotype-context-note">An association to review, not a diagnosis. Characteristic patterns are more informative than isolated signs; absence does not exclude disease.</p>
   <Clues syndrome={syndrome}/>
   <dl className="syndrome-facts"><dt>Gene–phenotype connection</dt><dd>{syndrome.mechanism}</dd><dt>Cardiac risks</dt><dd>{syndrome.cardiac}</dd><dt>Inheritance &amp; mechanism</dt><dd>{syndrome.inheritance}</dd><dt>Confirmatory evaluation</dt><dd>{syndrome.testing.join(' ')}</dd><dt>Testing gaps to check</dt><dd>{syndrome.gaps.join(' ')}</dd><dt>Caveats</dt><dd>{syndrome.caveats.join(' ')}</dd></dl>
-  <div className="syndrome-genes"><p className="syndrome-genes-label">Catalog genes with this association</p><div className="syndrome-gene-list">{syndrome.genes.map(symbol=>{const g=genes.find(x=>x.symbol===symbol);return <span key={symbol} className={g&&isAdded(g)?'is-added':undefined}>{symbol}<small>{phenotypePanelStatus(g)}</small></span>;})}</div></div>
+  <div className="syndrome-genes"><p className="syndrome-genes-label">Catalog genes with this association</p><div className="syndrome-gene-list">{syndrome.genes.map(symbol=>{const g=genes.find(x=>x.symbol===symbol);const added=Boolean(g&&isAdded(g));if(!g||!onGeneOpen){return <span key={symbol} className={added?'is-added':undefined}>{symbol}<small>{phenotypePanelStatus(g)}</small></span>;}return <button key={symbol} type="button" className={`syndrome-gene-chip ${added?'is-added':''}`} onClick={()=>onGeneOpen(g)} aria-label={`Open ${symbol} and highlight it on the organ-involvement map`}>{symbol}<ArrowUpRight size={12} aria-hidden="true"/><small>{phenotypePanelStatus(g)}</small></button>;})}</div></div>
   {gene&&<div className="syndrome-coverage"><strong>{phenotypePanelStatus(gene)}</strong><span>In source PDF · laboratory assay coverage unconfirmed.</span></div>}
   <SyndromeSources syndrome={syndrome}/>
   <p className="phenotype-reviewed">Reviewed 23 Oct 2026 · Qualitative teaching labels, not likelihood ratios. A VUS does not establish a syndrome.</p>

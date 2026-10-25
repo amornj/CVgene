@@ -499,7 +499,7 @@ export default function App() {
                       </button>
                     </div>
                     <div className="inspector-scroll">
-                      <SyndromeDetail syndrome={syn} gene={undefined} />
+                      <SyndromeDetail syndrome={syn} gene={undefined} onGeneOpen={(g) => choose(g)} />
                     </div>
                   </div>
                 );
