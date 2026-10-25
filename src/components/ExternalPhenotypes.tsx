@@ -1,4 +1,4 @@
-import {useMemo} from 'react';
+import {Fragment, useMemo} from 'react';
 import {ArrowUpRight,ChevronDown,ChevronRight,PersonStanding,Search} from 'lucide-react';
 import {genes,isAdded,type Gene} from '../data';
 import {clueGroups,clinicalClueGroups,clueKind,clueStrength,externalSyndromes,matchesClue,phenotypePanelStatus,syndromesForGene,syndromeFamilies,syndromeFamily,type ExternalSyndrome} from '../external-phenotypes';
@@ -36,7 +36,7 @@ export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpand
  if(!list.length)return null;
  return <section className="detail-section external-phenotype-section">
   <details open={expanded} onToggle={e=>onExpandedChange(e.currentTarget.open)}>
-   <summary id="external-phenotype-heading"><PersonStanding size={16} aria-hidden="true"/><span>External phenotype & syndrome clues<small>{list.map(s=>s.name).join(' · ')}</small></span><ChevronDown size={14} aria-hidden="true"/></summary>
+   <summary id="external-phenotype-heading"><PersonStanding size={16} aria-hidden="true"/><span>External phenotype &amp; syndrome clues<small className="summary-syndrome-names">{list.map((s,i)=><Fragment key={s.id}>{i>0&&' · '}{onSyndromeOpen?<button type="button" className="syndrome-open-inline" onClick={e=>{e.preventDefault();e.stopPropagation();onSyndromeOpen(s.id);}} aria-label={`Open ${s.name} syndrome details in the right pane`}>{s.name}</button>:s.name}</Fragment>)}</small></span><ChevronDown size={14} aria-hidden="true"/></summary>
    <p className="phenotype-context-note">An association to review, not a diagnosis. Characteristic patterns are more informative than isolated signs; absence does not exclude disease.</p>
    {list.map(s=><article className="syndrome-detail" key={s.id}>
     <h3>{onSyndromeOpen?<button type="button" className="syndrome-open-button" onClick={()=>onSyndromeOpen(s.id)} aria-label={`Open ${s.name} syndrome details in the right pane`}>{s.name}<ArrowUpRight size={13} aria-hidden="true"/></button>:s.name}</h3>

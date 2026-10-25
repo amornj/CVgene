@@ -26,3 +26,11 @@
 .syndrome-open-button{display:inline-flex;align-items:center;gap:5px;padding:0;font-family:var(--font-display);font-size:inherit;font-weight:inherit;color:var(--accent-ink);text-align:left;border-radius:var(--r-xs)}
 .syndrome-open-button:hover{color:var(--accent-hover);text-decoration:underline;text-underline-offset:3px}
 .syndrome-open-button>svg{color:var(--ink-faint);flex-shrink:0}
+
+/* Syndrome names in the collapsed summary behave as links, without toggling. */
+.summary-syndrome-names{line-height:1.75}
+.syndrome-open-inline{display:inline;padding:0;font:inherit;font-weight:500;color:var(--accent-ink);border-radius:2px;text-align:left}
+.syndrome-open-inline:hover{color:var(--accent-hover);text-decoration:underline;text-underline-offset:2px}
+/* Card headings already use .syndrome-open-button; make them read as links too. */
+.syndrome-detail>h3{margin-bottom:2px}
+.syndrome-open-button{font-size:var(--text-md);font-weight:600}
