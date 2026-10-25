@@ -82,7 +82,7 @@ export default function Sidebar({open, onClose, panel, view, syndromeId, onAllGe
             onClick={() => onSyndrome('all')}
           >
             <Stethoscope size={17} />
-            <span>Syndromes &amp; clues</span>
+            <span>By clinical syndrome</span>
             <ChevronRight size={14} className="nav-chevron" />
           </button>
         </nav>

@@ -39,7 +39,8 @@ export default function App() {
   // Default to the full VA set; subtypes are an optional narrowing.
   const [vaFocus, setVaFocus] = useState<VaFocusId>('all');
   const [query, setQuery] = useState('');
-  const [view, setView] = useState<View>(() => (window.innerWidth < 760 ? 'list' : 'map'));
+  // Always land on By organ involvement, including on phones.
+  const [view, setView] = useState<View>('map');
   const [externalOnly, setExternalOnly] = useState(false);
   const [clueGroup, setClueGroup] = useState('all');
   const [clueQuery, setClueQuery] = useState('');

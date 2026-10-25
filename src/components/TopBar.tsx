@@ -100,15 +100,15 @@ export function ViewToolbar({
 }) {
   return (
     <div className="view-toolbar">
-      <div className="segmented" role="tablist" aria-label="Explorer view">
+      <div className="segmented" role="tablist" aria-label="Gene explorer views">
         <button role="tab" aria-selected={view === 'map'} className={view === 'map' ? 'is-chosen' : ''} onClick={() => onView('map')}>
-          Panel map
+          By organ involvement
         </button>
         <button role="tab" aria-selected={view === 'list'} className={view === 'list' ? 'is-chosen' : ''} onClick={() => onView('list')}>
-          Gene list
+          By alphabet
         </button>
         <button role="tab" aria-selected={view === 'syndromes'} className={view === 'syndromes' ? 'is-chosen' : ''} onClick={() => onView('syndromes')}>
-          Syndromes &amp; clues
+          By clinical syndrome
         </button>
       </div>
       <div className="toolbar-actions">
