@@ -85,13 +85,9 @@ export default function MapSection({
 
   return (
     <section className="map-section">
+      {/* No description here: it changed with the AF toggle and pushed the map up/down. */}
       <SectionHeading
         title="Clinical phenotype overlap"
-        description={
-          showAf
-            ? 'AF overlaps ventricular arrhythmia, DCM and HCM; the AF-only area highlights familial / early-onset AF.'
-            : 'Ventricular arrhythmia, DCM and HCM. Turn on AF to explore its distinct and shared associations.'
-        }
         actions={<FrequencyLaunch onClick={() => onOpenFrequency('dcm')} />}
       />
 
