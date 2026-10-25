@@ -2,6 +2,7 @@ import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {
   genes,
     clinicalPanelById,
+  clinicalPanels,
   clinicalGroupsFor,
   panelById,
   searchGenes,
@@ -307,7 +308,6 @@ export default function App() {
         onClose={() => setNavOpen(false)}
         panel={panel}
         onAllGenes={() => navigate('all', 'map')}
-        onPanel={(id) => navigate(id, 'map')}
         onSources={() => setSourcesOpen(true)}
       />
 
@@ -345,6 +345,15 @@ export default function App() {
                 if (v === 'map') setPanel('all');
               }}
               onExport={exportCsv}
+              disease={panel}
+              diseaseOptions={clinicalPanels.map((p) => ({id: p.id, name: p.name, count: p.count}))}
+              totalGenes={genes.length}
+              onDiseaseChange={(id) => {
+                setPanel(id);
+                setActiveRegion(null);
+                setQuery('');
+                if (id !== 'all') setView('list');
+              }}
             />
 
             {view === 'syndromes' ? (

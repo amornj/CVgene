@@ -1,28 +1,15 @@
-import {Activity, BookOpen, ChevronRight, Dna, FileText, Heart, Layers, Network, Stethoscope} from 'lucide-react';
-import {clinicalPanelById, genes} from '../data';
+import {Activity, BookOpen, ChevronRight, Dna, FileText} from 'lucide-react';
+import {genes} from '../data';
 
 type SidebarProps = {
   open: boolean;
   onClose: () => void;
   panel: string;
   onAllGenes: () => void;
-  onPanel: (id: string) => void;
   onSources: () => void;
 };
 
-const diseaseIcons: Record<string, typeof Heart> = {
-  va: Activity,
-  af: Heart,
-  dcm: Heart,
-  hcm: Heart,
-  aortopathy: Network,
-  pah: Stethoscope,
-  lipid: Layers,
-};
-
-export const diseaseOrder = ['va', 'af', 'dcm', 'hcm', 'aortopathy', 'pah', 'lipid'];
-
-export default function Sidebar({open, onClose, panel, onAllGenes, onPanel, onSources}: SidebarProps) {
+export default function Sidebar({open, onClose, panel, onAllGenes, onSources}: SidebarProps) {
   return (
     <>
       {open && <button type="button" className="nav-scrim" aria-label="Close navigation" onClick={onClose} />}
@@ -51,25 +38,6 @@ export default function Sidebar({open, onClose, panel, onAllGenes, onPanel, onSo
             <span>All genes</span>
             <span className="nav-count">{genes.length}</span>
           </button>
-
-          <p className="nav-label">By disease</p>
-          {diseaseOrder.map((id) => {
-            const p = clinicalPanelById(id);
-            const Icon = diseaseIcons[id] ?? Heart;
-            return (
-              <button
-                key={id}
-                type="button"
-                className={`nav-item nav-item--disease ${panel === id ? 'is-active' : ''}`}
-                aria-current={panel === id ? 'page' : undefined}
-                onClick={() => onPanel(id)}
-              >
-                <Icon size={17} className="nav-disease-icon" style={{color: `var(--${id === 'va' ? 'va' : id})`}} />
-                <span>{p.name}</span>
-                <span className="nav-count">{p.count}</span>
-              </button>
-            );
-          })}
 
         </nav>
 

@@ -1,4 +1,4 @@
-import {ArrowUpRight, Command, Info, Menu, Search, X} from 'lucide-react';
+import {ArrowUpRight, ChevronDown, Command, Info, Menu, Search, X} from 'lucide-react';
 import {exampleSearches} from './types';
 
 type TopBarProps = {
@@ -89,10 +89,18 @@ export function ViewToolbar({
   view,
   onView,
   onExport,
+  disease,
+  diseaseOptions,
+  totalGenes,
+  onDiseaseChange,
 }: {
   view: string;
   onView: (view: 'map' | 'list' | 'syndromes') => void;
   onExport: () => void;
+  disease?: string;
+  diseaseOptions?: {id: string; name: string; count: number}[];
+  totalGenes?: number;
+  onDiseaseChange?: (id: string) => void;
 }) {
   return (
     <div className="view-toolbar">
@@ -108,6 +116,24 @@ export function ViewToolbar({
         </button>
       </div>
       <div className="toolbar-actions">
+        {onDiseaseChange && (
+          <label className="disease-filter">
+            <span className="sr-only">Filter by disease</span>
+            <select
+              value={disease}
+              onChange={(e) => onDiseaseChange(e.target.value)}
+              aria-label="Filter genes by disease"
+            >
+              <option value="all">All diseases ({totalGenes})</option>
+              {(diseaseOptions ?? []).map((d) => (
+                <option key={d.id} value={d.id}>
+                  {d.name} ({d.count})
+                </option>
+              ))}
+            </select>
+            <ChevronDown size={14} aria-hidden="true" />
+          </label>
+        )}
         <button type="button" className="button-secondary" onClick={onExport}>
           <ArrowUpRight size={15} />
           <span>Export CSV</span>
