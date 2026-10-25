@@ -87,7 +87,7 @@ export default function MapSection({
     <section className="map-section">
       {/* No description here: it changed with the AF toggle and pushed the map up/down. */}
       <SectionHeading
-        title="Clinical phenotype overlap"
+        title="Arrhythmia-cardiomyopathy"
         actions={<FrequencyLaunch onClick={() => onOpenFrequency('dcm')} />}
       />
 
