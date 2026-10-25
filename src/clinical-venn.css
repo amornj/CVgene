@@ -15,10 +15,20 @@
 @media (max-width:760px){
   .clinical-venn-scroll{overflow-x:hidden;display:block}
   .clinical-venn-canvas{min-width:0;width:100%;height:auto;aspect-ratio:1/1}
-  .clinical-gene-slot>.gene-chip{font-size:clamp(5px,1.35vw,8px);border-radius:2px;padding:0 1px}
-  .clinical-circle-title{font-size:clamp(8px,2.6vw,11px);padding:2px 4px;gap:3px}
-  .clinical-circle-title>strong{font-size:clamp(7px,2vw,9px);padding:1px 3px}
-  .clinical-af-focus-label{font-size:clamp(6px,1.8vw,9px)}
+  /* Venn symbols only: tiny type so neighbouring chips never collide.
+     Users can pinch-zoom the page for a closer look. */
+  .clinical-gene-slot>.gene-chip{
+    font-size:clamp(4px,1.15vw,6.5px);
+    letter-spacing:0;
+    line-height:1;
+    padding:0;
+    border-radius:1.5px;
+    border-width:.5px;
+  }
+  .clinical-circle-title{font-size:clamp(6px,1.9vw,8px);padding:1px 3px;gap:2px}
+  .clinical-circle-title>strong{font-size:clamp(5px,1.5vw,7px);padding:0 2px;border-width:.5px}
+  .clinical-af-focus-label{font-size:clamp(5px,1.5vw,7px);line-height:1.25}
+  .clinical-venn-footer{font-size:9px}
 }
 .clinical-venn-svg{position:absolute;inset:0;width:100%;height:100%}
 .clinical-circle-shape{stroke-width:1.3}
