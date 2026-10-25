@@ -31,7 +31,7 @@ export function SyndromeDetail({syndrome, gene, onGeneOpen}:{syndrome:ExternalSy
  </div>;
 }
 
-export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpandedChange}:{gene:Gene;expanded:boolean;preferredSyndrome:string|null;onExpandedChange:(open:boolean)=>void}){
+export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpandedChange,onSyndromeOpen}:{gene:Gene;expanded:boolean;preferredSyndrome:string|null;onExpandedChange:(open:boolean)=>void;onSyndromeOpen?:(id:string)=>void}){
  const list=syndromesForGene(gene.symbol).sort((a,b)=>Number(b.id===preferredSyndrome)-Number(a.id===preferredSyndrome));
  if(!list.length)return null;
  return <section className="detail-section external-phenotype-section">
@@ -39,7 +39,7 @@ export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpand
    <summary id="external-phenotype-heading"><PersonStanding size={16} aria-hidden="true"/><span>External phenotype & syndrome clues<small>{list.map(s=>s.name).join(' · ')}</small></span><ChevronDown size={14} aria-hidden="true"/></summary>
    <p className="phenotype-context-note">An association to review, not a diagnosis. Characteristic patterns are more informative than isolated signs; absence does not exclude disease.</p>
    {list.map(s=><article className="syndrome-detail" key={s.id}>
-    <h3>{s.name}</h3>
+    <h3>{onSyndromeOpen?<button type="button" className="syndrome-open-button" onClick={()=>onSyndromeOpen(s.id)} aria-label={`Open ${s.name} syndrome details in the right pane`}>{s.name}<ArrowUpRight size={13} aria-hidden="true"/></button>:s.name}</h3>
     {s.cue==='clinical'&&<p className="clinical-clue-note">History / specialist assessment; no dependable distinctive external appearance.</p>}
     <Clues syndrome={s}/>
     <dl className="syndrome-facts"><dt>Gene–phenotype connection</dt><dd>{s.mechanism}</dd><dt>Cardiac risks</dt><dd>{s.cardiac}</dd><dt>Inheritance & mechanism</dt><dd>{s.inheritance}</dd><dt>Confirmatory evaluation</dt><dd>{s.testing.join(' ')}</dd><dt>Testing gaps to check</dt><dd>{s.gaps.join(' ')}</dd><dt>Caveats</dt><dd>{s.caveats.join(' ')}</dd></dl>

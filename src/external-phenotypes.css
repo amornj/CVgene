@@ -6,3 +6,23 @@
 .aortic-syndrome-note>a{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:#8b6b3d;text-decoration:underline;text-underline-offset:3px}
 .clue-gene-connection{font-size:12px;line-height:1.8;color:#6a5b74;margin:14px 0 10px;max-width:700px}
 .clue-gene-connection>strong{display:block;font-size:10px;color:#7c638b;font-weight:600;margin-bottom:3px}
+
+/* ---- Syndrome record in the right pane (standalone) ---------------------- */
+.syndrome-detail--standalone{padding-top:0}
+.syndrome-detail-head{margin-bottom:14px}
+.syndrome-detail-title{font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;letter-spacing:-0.025em;color:var(--ink);margin-top:6px;line-height:1.15}
+.syndrome-detail-sub{font-size:var(--text-xs);color:var(--ink-subtle);margin-top:4px}
+.syndrome-genes{margin-top:18px;padding-top:14px;border-top:1px solid var(--line-inset)}
+.syndrome-genes-label{font-size:var(--text-2xs);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-subtle);margin-bottom:10px}
+.syndrome-gene-list{display:grid;gap:8px}
+.syndrome-gene-chip{display:flex;align-items:center;gap:6px;width:100%;padding:9px 11px;text-align:left;font-size:var(--text-sm);font-weight:600;color:var(--ink-body);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);transition:border-color var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease)}
+.syndrome-gene-chip:hover{border-color:var(--accent-ring);background:var(--accent-softer)}
+.syndrome-gene-chip>svg{color:var(--accent);margin-left:auto;flex-shrink:0}
+.syndrome-gene-chip>small{font-size:var(--text-2xs);font-weight:400;color:var(--ink-subtle);display:block;width:100%;margin-top:2px}
+.syndrome-gene-chip.is-added{color:var(--added);border-color:var(--added-line);background:var(--added-soft)}
+.syndrome-genes+.syndrome-gene-list span.is-added{color:var(--added)}
+
+/* Syndrome names inside gene details act as links to the syndrome record. */
+.syndrome-open-button{display:inline-flex;align-items:center;gap:5px;padding:0;font-family:var(--font-display);font-size:inherit;font-weight:inherit;color:var(--accent-ink);text-align:left;border-radius:var(--r-xs)}
+.syndrome-open-button:hover{color:var(--accent-hover);text-decoration:underline;text-underline-offset:3px}
+.syndrome-open-button>svg{color:var(--ink-faint);flex-shrink:0}

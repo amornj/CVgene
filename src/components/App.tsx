@@ -513,6 +513,7 @@ export default function App() {
                   frequencyContext={frequencyContext}
                   onClose={() => setInspectorOpen(false)}
                   onOpenFrequency={openFrequency}
+                  onOpenSyndrome={openSyndrome}
                   onBackToFrequency={() => openFrequency(frequencyContext)}
                   onSources={() => setSourcesOpen(true)}
                   onToast={setToast}

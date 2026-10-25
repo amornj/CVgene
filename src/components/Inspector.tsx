@@ -38,6 +38,7 @@ type GeneInspectorProps = {
   frequencyContext: FrequencyId;
   onClose: () => void;
   onOpenFrequency: (id: FrequencyId) => void;
+  onOpenSyndrome: (id: string) => void;
   onBackToFrequency: () => void;
   onSources: () => void;
   onToast: (message: string) => void;
@@ -88,6 +89,7 @@ export default function Inspector({
   frequencyContext,
   onClose,
   onOpenFrequency,
+  onOpenSyndrome,
   onBackToFrequency,
   onSources,
   onToast,
@@ -300,7 +302,7 @@ export default function Inspector({
 
           <GeneFrequency gene={gene} onOpen={onOpenFrequency} />
 
-          <GeneExternalPhenotypes gene={gene} expanded={false} preferredSyndrome={null} onExpandedChange={() => {}} />
+          <GeneExternalPhenotypes gene={gene} expanded={false} preferredSyndrome={null} onExpandedChange={() => {}} onSyndromeOpen={onOpenSyndrome} />
 
           <Collapsible title="Sources" icon={<BookOpen size={15} />}>
             <div className="source-links">
