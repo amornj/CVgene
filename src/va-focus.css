@@ -33,7 +33,9 @@
 .map-highlight-toggle[aria-pressed=true]{color:#7862ab}
 .map-highlight-toggle[aria-pressed=true] .af-toggle-track{background:#9880b8}
 .phenotype-highlight-toggle{gap:6px}
-.va-subtype-select{position:relative;display:block;max-width:185px;margin:3px 0 5px}
+/* Reserve the slot even when VA is off so the toggle row never reflows. */
+.va-subtype-select{position:relative;display:block;max-width:185px;margin:3px 0 5px;transition:opacity var(--dur-fast) var(--ease)}
+.va-subtype-select.is-hidden{opacity:0;pointer-events:none;visibility:hidden}
 .va-subtype-select select{appearance:none;background:transparent;border:1px solid #e1d8e8;border-radius:4px;color:#6a527b;font-size:11px;line-height:1.5;padding:6px 24px 6px 9px;min-height:34px;max-width:185px}
 .va-subtype-select>svg{position:absolute;right:7px;top:50%;transform:translateY(-50%);pointer-events:none;color:#8a739d}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

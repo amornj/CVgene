@@ -36,7 +36,8 @@ export default function App() {
   const [activeRegion, setActiveRegion] = useState<string | null>(null);
   const [showAf, setShowAf] = useState(false);
   const [vaEnabled, setVaEnabled] = useState(false);
-  const [vaFocus, setVaFocus] = useState<Exclude<VaFocusId, 'all'>>('acm');
+  // Default to the full VA set; subtypes are an optional narrowing.
+  const [vaFocus, setVaFocus] = useState<VaFocusId>('all');
   const [query, setQuery] = useState('');
   const [view, setView] = useState<View>(() => (window.innerWidth < 760 ? 'list' : 'map'));
   const [externalOnly, setExternalOnly] = useState(false);

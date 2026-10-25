@@ -20,10 +20,10 @@ export function VaFocusControls({
   onExternalToggle,
 }: {
   enabled: boolean;
-  focus: Exclude<VaFocusId, 'all'>;
+  focus: VaFocusId;
   external: boolean;
   onToggle: () => void;
-  onChange: (focus: Exclude<VaFocusId, 'all'>) => void;
+  onChange: (focus: VaFocusId) => void;
   onExternalToggle: () => void;
 }) {
   return (
@@ -41,19 +41,23 @@ export function VaFocusControls({
         </span>
         <span>VA</span>
       </button>
-      {enabled && (
-        <label className="va-subtype-select">
-          <span className="sr-only">VA subtype</span>
-          <select aria-label="VA subtype" value={focus} onChange={(e) => onChange(e.target.value as Exclude<VaFocusId, 'all'>)}>
-            {vaSubtypeOptions.map((option) => (
-              <option key={option.id} value={option.id}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-          <ChevronDown size={12} aria-hidden="true" />
-        </label>
-      )}
+      {/* Always rendered so enabling VA never reflows the toggle row. */}
+      <label className={`va-subtype-select ${enabled ? '' : 'is-hidden'}`} aria-hidden={!enabled}>
+        <span className="sr-only">VA subtype</span>
+        <select
+          aria-label="VA subtype"
+          tabIndex={enabled ? 0 : -1}
+          value={focus}
+          onChange={(e) => onChange(e.target.value as VaFocusId)}
+        >
+          {vaSubtypeOptions.map((option) => (
+            <option key={option.id} value={option.id}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <ChevronDown size={12} aria-hidden="true" />
+      </label>
       <button
         type="button"
         className="af-circle-toggle map-highlight-toggle phenotype-highlight-toggle"

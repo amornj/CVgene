@@ -55,7 +55,9 @@ test('KCNJ2 is Andersen–Tawil or selected SQTS; bidirectional VT does not auto
  assert.equal(symbols('cpvt').includes('KCNJ2'),false);
  assert.deepEqual(symbols('cpvt'),['CALM1','CALM2','CALM3','CASQ2','RYR2','TECRL','TRDN']);
  assert.deepEqual(symbols('brugada'),['SCN5A']);
- assert.deepEqual(vaSubtypeOptions.map(option=>option.id),['acm','lqts','sqts','cpvt','brugada','ats']);
+ // 'all' is first so enabling VA shows every VA gene before narrowing to a subtype.
+ assert.deepEqual(vaSubtypeOptions.map(option=>option.id),['all','acm','lqts','sqts','cpvt','brugada','ats']);
+ assert.deepEqual(symbols('all').length,new Set(vaAssociations.map(a=>a.symbol)).size);
 });
 
 test('Functional effects are not universal gene rules and structural/electrical contexts can overlap',()=>{

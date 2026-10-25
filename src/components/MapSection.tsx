@@ -28,7 +28,7 @@ type PreviewHandlers = {
 type MapSectionProps = PreviewHandlers & {
   showAf: boolean;
   vaEnabled: boolean;
-  vaFocus: Exclude<VaFocusId, 'all'>;
+  vaFocus: VaFocusId;
   externalOnly: boolean;
   activeVaFocus: VaFocusId;
   focusSymbols: ReadonlySet<string>;
@@ -37,7 +37,7 @@ type MapSectionProps = PreviewHandlers & {
   onAfToggle: () => void;
   onRegionSelect: (id: string | null) => void;
   onVaToggle: () => void;
-  onVaFocus: (focus: Exclude<VaFocusId, 'all'>) => void;
+  onVaFocus: (focus: VaFocusId) => void;
   onExternalToggle: () => void;
   onOpenFrequency: (id: FrequencyId) => void;
 };
@@ -237,7 +237,7 @@ function clinicalRegionsForClient(showAf: boolean) {
 function frequencyForGroupClient(id: string) {
   return frequencyForGroup(id, 'dcm');
 }
-function vaFocusGroupLabel(focus: Exclude<VaFocusId, 'all'>) {
+function vaFocusGroupLabel(focus: VaFocusId) {
   return vaFocusGroups.find((g) => g.id === focus)?.label ?? '';
 }
 

@@ -8,7 +8,8 @@ export const vaAssociations=focusData.associations as VaAssociation[];
 export const vaFocusGroups=focusData.groups as VaFocusGroup[];
 export const vaFocusSources=focusData.sources as Record<string,{title:string;url:string;detail:string}>;
 export const vaFocusReviewed=focusData.reviewed;
-export const vaSubtypeOptions:{id:Exclude<VaFocusId,'all'>;label:string}[]=[{id:'acm',label:'ACM / ARVC'},{id:'lqts',label:'Long QT'},{id:'sqts',label:'Short QT'},{id:'cpvt',label:'CPVT'},{id:'brugada',label:'Brugada'},{id:'ats',label:'Andersen–Tawil'}];
+// 'all' is the default: every VA-associated gene, before any subtype is chosen.
+export const vaSubtypeOptions:{id:VaFocusId;label:string}[]=[{id:'all',label:'All VA genes'},{id:'acm',label:'ACM / ARVC'},{id:'lqts',label:'Long QT'},{id:'sqts',label:'Short QT'},{id:'cpvt',label:'CPVT'},{id:'brugada',label:'Brugada'},{id:'ats',label:'Andersen–Tawil'}];
 export const vaFocusGroup=(id:VaFocusId)=>vaFocusGroups.find(group=>group.id===id);
 export const matchesVaContext=(association:VaAssociation,id:VaFocusId)=>id==='all'||association.context===id;
 export function vaFocusSymbols(id:VaFocusId){return [...new Set(vaAssociations.filter(a=>matchesVaContext(a,id)).map(a=>a.symbol))].sort();}
