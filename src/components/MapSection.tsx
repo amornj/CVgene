@@ -1,5 +1,5 @@
 import {Fragment} from 'react';
-import {ArrowUpRight, ChartNoAxesColumn, ChevronDown, Info} from 'lucide-react';
+import {ChartNoAxesColumn, ChevronDown, Info} from 'lucide-react';
 import {
   clinicalPanelById,
   mapGenesFor,
@@ -198,7 +198,7 @@ export default function MapSection({
                 <strong>{p.id === 'pah' ? 'Pulmonary hypertension' : p.name}</strong>
                 <small>{p.count} source genes</small>
               </span>
-              <ArrowUpRight size={14} />
+              <ChartNoAxesColumn size={15} className="independent-frequency-icon" />
             </button>
             <div className="gene-grid gene-grid--tight">
               {sourceGenes

@@ -724,7 +724,10 @@
   line-height: var(--leading-snug);
 }
 .independent-text small { font-size: var(--text-2xs); color: var(--ink-subtle); }
-.independent-heading > svg { color: var(--ink-faint); }
+/* Actions on these panel headings open the frequency pane, so they carry the
+   same histogram affordance as the Arrhythmia-cardiomyopathy section. */
+.independent-heading > .independent-frequency-icon { color: var(--accent); }
+.independent-heading:hover > .independent-frequency-icon { color: var(--accent-hover); }
 .independent-heading:hover strong { color: var(--accent); }
 
 .workspace-note {
