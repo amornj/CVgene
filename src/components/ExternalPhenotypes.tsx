@@ -1,5 +1,5 @@
 import {useMemo} from 'react';
-import {ArrowUpRight,ChevronDown,PersonStanding,Search} from 'lucide-react';
+import {ArrowUpRight,ChevronDown,ChevronRight,PersonStanding,Search} from 'lucide-react';
 import {genes,isAdded,type Gene} from '../data';
 import {clueGroups,clinicalClueGroups,clueKind,clueStrength,externalSyndromes,matchesClue,phenotypePanelStatus,syndromesForGene,syndromeFamilies,syndromeFamily,type ExternalSyndrome} from '../external-phenotypes';
 import '../external-phenotypes.css';
@@ -10,6 +10,25 @@ function Clues({syndrome}:{syndrome:ExternalSyndrome}){
 
 function SyndromeSources({syndrome}:{syndrome:ExternalSyndrome}){
  return <div className="syndrome-sources">{syndrome.sources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}<ArrowUpRight size={12} aria-hidden="true"/><small>{r.sections}</small></a>)}</div>;
+}
+
+/** A single syndrome's full external-phenotype record, for the right pane. */
+export function SyndromeDetail({syndrome, gene}:{syndrome:ExternalSyndrome;gene:Gene|undefined}){
+ return <div className="syndrome-detail syndrome-detail--standalone">
+  <div className="syndrome-detail-head">
+   <span className="inspector-kicker"><PersonStanding size={14} aria-hidden="true"/>External phenotype &amp; syndrome clues</span>
+   <h2 className="syndrome-detail-title" tabIndex={-1}>{syndrome.name}</h2>
+   <p className="syndrome-detail-sub">{syndrome.cue==='external'?'External phenotype':'History / assessment clue'}</p>
+  </div>
+  {syndrome.cue==='clinical'&&<p className="clinical-clue-note">History / specialist assessment; no dependable distinctive external appearance.</p>}
+  <p className="phenotype-context-note">An association to review, not a diagnosis. Characteristic patterns are more informative than isolated signs; absence does not exclude disease.</p>
+  <Clues syndrome={syndrome}/>
+  <dl className="syndrome-facts"><dt>Gene–phenotype connection</dt><dd>{syndrome.mechanism}</dd><dt>Cardiac risks</dt><dd>{syndrome.cardiac}</dd><dt>Inheritance &amp; mechanism</dt><dd>{syndrome.inheritance}</dd><dt>Confirmatory evaluation</dt><dd>{syndrome.testing.join(' ')}</dd><dt>Testing gaps to check</dt><dd>{syndrome.gaps.join(' ')}</dd><dt>Caveats</dt><dd>{syndrome.caveats.join(' ')}</dd></dl>
+  <div className="syndrome-genes"><p className="syndrome-genes-label">Catalog genes with this association</p><div className="syndrome-gene-list">{syndrome.genes.map(symbol=>{const g=genes.find(x=>x.symbol===symbol);return <span key={symbol} className={g&&isAdded(g)?'is-added':undefined}>{symbol}<small>{phenotypePanelStatus(g)}</small></span>;})}</div></div>
+  {gene&&<div className="syndrome-coverage"><strong>{phenotypePanelStatus(gene)}</strong><span>In source PDF · laboratory assay coverage unconfirmed.</span></div>}
+  <SyndromeSources syndrome={syndrome}/>
+  <p className="phenotype-reviewed">Reviewed 23 Oct 2026 · Qualitative teaching labels, not likelihood ratios. A VUS does not establish a syndrome.</p>
+ </div>;
 }
 
 export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpandedChange}:{gene:Gene;expanded:boolean;preferredSyndrome:string|null;onExpandedChange:(open:boolean)=>void}){
@@ -32,7 +51,7 @@ export function GeneExternalPhenotypes({gene,expanded,preferredSyndrome,onExpand
  </section>;
 }
 
-export function PhysicalClueExplorer({visibleGenes,onGeneSelect,onReset,filtered,clue,search,syndrome,onClueChange:setClue,onSearchChange:setSearch,onSyndromeChange:setSyndrome}:{visibleGenes:Gene[];onGeneSelect:(gene:Gene,syndrome:string)=>void;onReset:()=>void;filtered:boolean;clue:string;search:string;syndrome:string;onClueChange:(value:string)=>void;onSearchChange:(value:string)=>void;onSyndromeChange:(value:string)=>void}){
+export function PhysicalClueExplorer({visibleGenes,onGeneSelect,onSyndromeOpen,onReset,filtered,clue,search,syndrome,onClueChange:setClue,onSearchChange:setSearch,onSyndromeChange:setSyndrome}:{visibleGenes:Gene[];onGeneSelect:(gene:Gene,syndrome:string)=>void;onSyndromeOpen:(id:string)=>void;onReset:()=>void;filtered:boolean;clue:string;search:string;syndrome:string;onClueChange:(value:string)=>void;onSearchChange:(value:string)=>void;onSyndromeChange:(value:string)=>void}){
  const visible=useMemo(()=>new Set(visibleGenes.map(g=>g.symbol)),[visibleGenes]);
  const list=externalSyndromes.filter(s=>matchesClue(s,search,clue,syndrome)&&s.genes.some(symbol=>visible.has(symbol)));
  const count=new Set(list.flatMap(s=>s.genes.filter(symbol=>visible.has(symbol)))).size;
@@ -49,7 +68,7 @@ export function PhysicalClueExplorer({visibleGenes,onGeneSelect,onReset,filtered
   <div className="clue-result-status" role="status">{list.length} syndromes · {count} matching catalog genes{filtered&&<> · Workspace filters apply <button className="text-button" onClick={onReset}>Reset workspace filters</button></>}</div>
   {!list.length&&<div className="clue-empty"><p>No curated syndromes match the current filters.</p><button className="text-button" onClick={()=>{setSyndrome('all');setSearch('');onReset();}}>Clear syndrome search & filters</button></div>}
   {list.map(s=><article className="clue-explorer-row" key={s.id}>
-   <div className="clue-explorer-title"><h3>{s.name}</h3><span>{s.cue==='external'?'External phenotype':'History / assessment clue'}</span></div>
+   <div className="clue-explorer-title"><h3><button type="button" className="clue-syndrome-name" onClick={()=>onSyndromeOpen(s.id)} aria-label={`Open ${s.name} external phenotype details`}>{s.name}<ChevronRight size={14} aria-hidden="true"/></button></h3><span>{s.cue==='external'?'External phenotype':'History / assessment clue'}</span></div>
    <Clues syndrome={s}/>
    <div className="phenotype-gene-links">{s.genes.map(symbol=>{const gene=genes.find(g=>g.symbol===symbol);const inScope=visible.has(symbol);return <div key={symbol}><button type="button" disabled={!gene||!inScope} className={gene&&isAdded(gene)?'red-text':''} onClick={()=>gene&&onGeneSelect(gene,s.id)} aria-label={`${symbol}: ${phenotypePanelStatus(gene)}. Open ${s.name} clues and testing`}>{symbol}<ArrowUpRight size={12} aria-hidden="true"/></button><small>{phenotypePanelStatus(gene)}{gene&&!inScope?' · filtered out':''}</small></div>;})}</div>
    <p className="clue-gene-connection"><strong>Gene–phenotype connection</strong>{s.mechanism}</p><p className="clue-row-risk">{s.cardiac}</p>

@@ -12,13 +12,14 @@ import {
 import {frequencyForGroup, type FrequencyId} from '../frequency';
 import {matchesMapHighlight, type VaFocusId} from '../va-focus';
 import {externalFeatureSymbols, externalSyndromes, matchesClue} from '../external-phenotypes';
+import {PanelRightClose, PersonStanding} from 'lucide-react';
 import Sidebar from './Sidebar';
 import {TopBar, SearchBar, ViewToolbar} from './TopBar';
 import MapSection from './MapSection';
 import Inspector from './Inspector';
 import FrequencyPane from './FrequencyPane';
 import {GeneTable} from './GeneList';
-import {PhysicalClueExplorer} from './ExternalPhenotypes';
+import {PhysicalClueExplorer, SyndromeDetail} from './ExternalPhenotypes';
 import {EmptyState, SectionHeading, FrequencyLaunch, ResetFilters} from './Shared';
 import {GeneTooltip, Toast, SourceDialog} from './Overlays';
 import type {View} from './types';
@@ -45,10 +46,11 @@ export default function App() {
   const [clueGroup, setClueGroup] = useState('all');
   const [clueQuery, setClueQuery] = useState('');
   const [syndromeId, setSyndromeId] = useState('all');
+  const [openedSyndrome, setOpenedSyndrome] = useState<string | null>(null);
   const [sourcesOpen, setSourcesOpen] = useState(false);
   // Open by default on wide screens: a gene is already selected, so show its details.
   const [inspectorOpen, setInspectorOpen] = useState(() => Boolean(initialSymbol) || !isNarrow());
-  const [inspectorMode, setInspectorMode] = useState<'gene' | 'frequency'>('gene');
+  const [inspectorMode, setInspectorMode] = useState<'gene' | 'frequency' | 'syndrome'>('gene');
   const [frequencyContext, setFrequencyContext] = useState<FrequencyId>('dcm');
   const [frequencyBack, setFrequencyBack] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
@@ -204,6 +206,15 @@ export default function App() {
   // Selecting a gene always lands on By organ involvement so the symbol is
   // visible in context on the diagram. Clearing the transient search/filters
   // stops them hijacking the view with a results list instead.
+  // Clicking a syndrome name opens that syndrome's external-phenotype record
+  // in the right pane, without leaving the By clinical syndrome tab.
+  const openSyndrome = useCallback((id: string) => {
+    setOpenedSyndrome(id);
+    setInspectorMode('syndrome');
+    setInspectorOpen(true);
+    setTooltip(null);
+  }, []);
+
   const choose = useCallback((gene: Gene, fromFrequency = false, syndrome: string | null = null) => {
     setSelected(gene);
     setInspectorMode('gene');
@@ -367,6 +378,7 @@ export default function App() {
                 filtered={filterActive || Boolean(query) || Boolean(activeRegion)}
                 onReset={resetFilters}
                 onGeneSelect={(g, id) => choose(g, false, id)}
+                onSyndromeOpen={(id) => openSyndrome(id)}
               />
             ) : view === 'list' || query || filterActive ? (
               <section className="results-section">
@@ -467,6 +479,31 @@ export default function App() {
                   onGeneSelect={(g) => choose(g, true)}
                 />
               ) : null}
+              {inspectorMode === 'syndrome' && openedSyndrome && (() => {
+                const syn = externalSyndromes.find((x) => x.id === openedSyndrome);
+                if (!syn) return null;
+                return (
+                  <div className="inspector">
+                    <div className="inspector-head">
+                      <span className="inspector-kicker">
+                        <PersonStanding size={14} />
+                        Syndrome details
+                      </span>
+                      <button
+                        type="button"
+                        className="icon-button close-inspector"
+                        onClick={() => setInspectorOpen(false)}
+                        aria-label="Close details pane"
+                      >
+                        <PanelRightClose size={17} />
+                      </button>
+                    </div>
+                    <div className="inspector-scroll">
+                      <SyndromeDetail syndrome={syn} gene={undefined} />
+                    </div>
+                  </div>
+                );
+              })()}
               {inspectorMode === 'gene' && (
                 <Inspector
                   gene={selected}
