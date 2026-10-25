@@ -1,16 +1,12 @@
 import {Activity, BookOpen, ChevronRight, Dna, FileText, Heart, Layers, Network, Stethoscope} from 'lucide-react';
 import {clinicalPanelById, genes} from '../data';
-import type {View} from './types';
 
 type SidebarProps = {
   open: boolean;
   onClose: () => void;
   panel: string;
-  view: View;
-  syndromeId: string;
   onAllGenes: () => void;
   onPanel: (id: string) => void;
-  onSyndrome: (id: string) => void;
   onSources: () => void;
 };
 
@@ -26,7 +22,7 @@ const diseaseIcons: Record<string, typeof Heart> = {
 
 export const diseaseOrder = ['va', 'af', 'dcm', 'hcm', 'aortopathy', 'pah', 'lipid'];
 
-export default function Sidebar({open, onClose, panel, view, syndromeId, onAllGenes, onPanel, onSyndrome, onSources}: SidebarProps) {
+export default function Sidebar({open, onClose, panel, onAllGenes, onPanel, onSources}: SidebarProps) {
   return (
     <>
       {open && <button type="button" className="nav-scrim" aria-label="Close navigation" onClick={onClose} />}
@@ -47,8 +43,8 @@ export default function Sidebar({open, onClose, panel, view, syndromeId, onAllGe
           <p className="nav-label">Browse</p>
           <button
             type="button"
-            className={`nav-item ${panel === 'all' && view !== 'syndromes' ? 'is-active' : ''}`}
-            aria-current={panel === 'all' && view !== 'syndromes' ? 'page' : undefined}
+            className={`nav-item ${panel === 'all' ? 'is-active' : ''}`}
+            aria-current={panel === 'all' ? 'page' : undefined}
             onClick={onAllGenes}
           >
             <Dna size={18} />
@@ -75,16 +71,6 @@ export default function Sidebar({open, onClose, panel, view, syndromeId, onAllGe
             );
           })}
 
-          <button
-            type="button"
-            className={`nav-item ${view === 'syndromes' ? 'is-active' : ''}`}
-            aria-current={view === 'syndromes' && syndromeId === 'all' ? 'page' : undefined}
-            onClick={() => onSyndrome('all')}
-          >
-            <Stethoscope size={17} />
-            <span>By clinical syndrome</span>
-            <ChevronRight size={14} className="nav-chevron" />
-          </button>
         </nav>
 
         <div className="sidebar-foot">

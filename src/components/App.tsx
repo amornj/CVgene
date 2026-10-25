@@ -306,14 +306,8 @@ export default function App() {
         open={navOpen}
         onClose={() => setNavOpen(false)}
         panel={panel}
-        view={view}
-        syndromeId={syndromeId}
         onAllGenes={() => navigate('all', 'map')}
         onPanel={(id) => navigate(id, 'map')}
-        onSyndrome={(id) => {
-          navigate('all', 'syndromes');
-          setSyndromeId(id);
-        }}
         onSources={() => setSourcesOpen(true)}
       />
 
