@@ -2,7 +2,7 @@
 .clinical-venn-toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:4px}
 
 .clinical-venn-scroll{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:#c7b7d5 transparent;border-radius:5px}
-.clinical-venn-canvas{position:relative;width:100%;min-width:760px;container-type:inline-size;aspect-ratio:1/1}
+.clinical-venn-canvas{position:relative;width:100%;min-width:760px;container-type:size;aspect-ratio:1/1}
 /* Square layout data, but the map must fit the viewport: cap height and let
    the width follow the height so the diagram never pushes the page. */
 @media (min-width:761px){
@@ -10,24 +10,24 @@
   /* Center the scroll frame when the canvas is narrower than the column. */
   .clinical-venn-scroll{display:flex;justify-content:center}
 }
-/* Phones: drop the fixed 760px canvas, scale the whole diagram to the screen
-   and let the chips shrink with it. Never scroll horizontally on a phone. */
+/* Phones: drop the fixed 760px canvas and scale the whole diagram to the
+   screen. Never scroll horizontally on a phone. */
 @media (max-width:760px){
   .clinical-venn-scroll{overflow-x:hidden;display:block}
   .clinical-venn-canvas{min-width:0;width:100%;height:auto;aspect-ratio:1/1}
-  /* Venn symbols only: tiny type so neighbouring chips never collide.
-     Users can pinch-zoom the page for a closer look. */
+  /* Symbols are sized in JS from the measured slot box (see ClinicalVenn),
+     because CSS units hit a browser floor before the slot does. These rules
+     only tighten the chip chrome so the glyphs use the whole slot. */
   .clinical-gene-slot>.gene-chip{
-    font-size:clamp(4px,1.15vw,6.5px);
-    letter-spacing:0;
-    line-height:1;
-    padding:0;
+    padding:0 1px;
     border-radius:1.5px;
     border-width:.5px;
+    letter-spacing:-0.01em;
+    overflow:visible;
   }
-  .clinical-circle-title{font-size:clamp(6px,1.9vw,8px);padding:1px 3px;gap:2px}
-  .clinical-circle-title>strong{font-size:clamp(5px,1.5vw,7px);padding:0 2px;border-width:.5px}
-  .clinical-af-focus-label{font-size:clamp(5px,1.5vw,7px);line-height:1.25}
+  .clinical-circle-title{font-size:clamp(6.5px,2.2cqw,9px);padding:1px 3px;gap:2px;white-space:normal;text-align:center;line-height:1.2}
+  .clinical-circle-title>strong{font-size:clamp(5.5px,1.7cqw,7.5px);padding:0 2px;border-width:.5px}
+  .clinical-af-focus-label{font-size:clamp(5.5px,1.6cqw,7.5px);line-height:1.25;white-space:normal}
   .clinical-venn-footer{font-size:9px}
 }
 .clinical-venn-svg{position:absolute;inset:0;width:100%;height:100%}

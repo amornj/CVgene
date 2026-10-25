@@ -1,4 +1,4 @@
-import type {CSSProperties, ReactNode} from 'react';
+import {useLayoutEffect, useRef, type CSSProperties, type ReactNode} from 'react';
 import {Info} from 'lucide-react';
 import {type Gene} from '../data';
 import layout from '../data/venn-layout.json';
@@ -36,6 +36,42 @@ export default function ClinicalVenn({
   focusControls,
   focusSymbols,
 }: ClinicalVennProps) {
+  const canvasRef = useRef<HTMLDivElement>(null);
+
+  /**
+   * Symbol type is sized from the slot's measured box, not from CSS units.
+   * A `clamp()` on vw/cqw hits the browser's minimum font size before the
+   * 900-unit slot grid does, so labels spill out of their boxes and collide on
+   * narrow screens. Measuring the slot keeps each label inside its own cell at
+   * any width, and lets the user pinch-zoom for a closer look.
+   */
+  useLayoutEffect(() => {
+    const root = canvasRef.current;
+    if (!root) return;
+
+    const fit = () => {
+      for (const slot of root.querySelectorAll<HTMLElement>('.clinical-gene-slot')) {
+        const chip = slot.firstElementChild as HTMLElement | null;
+        if (!chip) continue;
+        const text = chip.textContent ?? '';
+        const boxW = slot.clientWidth - 2;   // hairline border
+        const boxH = slot.clientHeight - 2;
+        if (boxW <= 0 || boxH <= 0) continue;
+        // ~0.60em per uppercase glyph for DM Sans, ~0.66em for digits.
+        const perChar = 0.6;
+        const byWidth = boxW / Math.max(text.length * perChar, 1);
+        const byHeight = boxH / 1.15;
+        const px = Math.max(3.2, Math.min(byWidth, byHeight, 10));
+        chip.style.fontSize = `${px.toFixed(2)}px`;
+      }
+    };
+
+    fit();
+    const observer = new ResizeObserver(fit);
+    observer.observe(root);
+    return () => observer.disconnect();
+  }, [showAf, regions.length]);
+
   const mode: MapMode = layout.modes[showAf ? 'af' : 'main'];
   const total = regions.reduce((n, r) => n + r.count, 0);
   const at = (x: number, y: number): CSSProperties => ({
@@ -70,7 +106,7 @@ export default function ClinicalVenn({
       </div>
 
       <div className="clinical-venn-scroll" tabIndex={0} aria-label={`Scrollable clinical phenotype diagram with ${total} gene symbols`}>
-        <div id="clinical-venn-canvas" className="clinical-venn-canvas">
+        <div id="clinical-venn-canvas" className="clinical-venn-canvas" ref={canvasRef}>
           <svg
             viewBox={`0 0 ${layout.width} ${layout.height}`}
             className="clinical-venn-svg"
@@ -140,6 +176,7 @@ export default function ClinicalVenn({
                     width: `${(layout.chipWidth / layout.width) * 100}%`,
                     height: `${(layout.chipHeight / layout.height) * 100}%`,
                   }}
+                  data-chip-w={layout.chipWidth}
                 >
                   {renderGene(gene)}
                 </div>
