@@ -14,7 +14,6 @@ export type ClinicalVennProps = {
   onGroupSelect: (id: string) => void;
   renderGene: (gene: Gene) => ReactNode;
   focusControls?: ReactNode;
-  focusScope?: ReactNode;
   focusSymbols?: ReadonlySet<string>;
 };
 
@@ -35,7 +34,6 @@ export default function ClinicalVenn({
   onGroupSelect,
   renderGene,
   focusControls,
-  focusScope,
   focusSymbols,
 }: ClinicalVennProps) {
   const mode: MapMode = layout.modes[showAf ? 'af' : 'main'];
@@ -53,7 +51,6 @@ export default function ClinicalVenn({
   return (
     <div className="clinical-venn-component">
       <div className="map-toolbar">
-        <div className="map-focus-context">{focusScope}</div>
         <div className="map-toggle-stack">
           <button
             type="button"

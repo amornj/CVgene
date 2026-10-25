@@ -13,7 +13,7 @@ import ClinicalVenn from './ClinicalVenn';
 import AfEvidence from './AfEvidence';
 import {FrequencyLaunch, SectionHeading} from './Shared';
 import GeneChip from './GeneChip';
-import {VaFocusControls, VaFocusScope} from './VaFocus';
+import {VaFocusControls} from './VaFocus';
 import type {VaFocusId} from '../va-focus';
 import type {FrequencyId} from '../frequency';
 
@@ -119,7 +119,6 @@ export default function MapSection({
             onExternalToggle={onExternalToggle}
           />
         }
-        focusScope={<VaFocusScope focus={activeVaFocus} external={externalOnly} />}
         focusSymbols={highlightEnabled ? focusSymbols : undefined}
       />
 
