@@ -75,7 +75,7 @@ export default function MapSection({
       gene={gene}
       small={small}
       selected={gene.symbol === selected.symbol}
-      dimmed={highlightEnabled && !focusSymbols.has(gene.symbol) && false}
+      dimmed={highlightEnabled && !focusSymbols.has(gene.symbol)}
       onSelect={onSelect}
       onPreview={onPreview}
       onPreviewEnd={onPreviewEnd}
