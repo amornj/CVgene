@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Design tokens — CardioGene
+   One source of truth for type, colour, space, radius and elevation.
+   Contrast targets: body text >= 7:1, secondary >= 4.6:1, borders >= 3:1.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  /* ---- Type families ---------------------------------------------------- */
+  --font-ui: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ---- Type scale (1.2 minor third, 15px base) -------------------------- */
+  --text-2xs: 0.6875rem; /* 11px — metadata, counts */
+  --text-xs:  0.75rem;   /* 12px — labels, captions */
+  --text-sm:  0.8125rem; /* 13px — dense UI text */
+  --text-base:0.9375rem; /* 15px — body */
+  --text-md:  1.0625rem; /* 17px — section leads */
+  --text-lg:  1.25rem;   /* 20px — pane titles */
+  --text-xl:  1.625rem;  /* 26px — page title */
+  --text-2xl: 2.125rem;  /* 34px — gene symbol */
+
+  --leading-tight: 1.25;
+  --leading-snug: 1.45;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Ink ramp --------------------------------------------------------- */
+  --ink:        #211d2b; /* headings, primary */
+  --ink-body:   #3a3448; /* body copy */
+  --ink-muted:  #5d5670; /* secondary copy — 7.0:1 on white */
+  --ink-subtle: #767084; /* tertiary labels — 4.9:1 on white */
+  --ink-faint:  #9a94a8; /* decorative only, never body */
+
+  /* ---- Surfaces --------------------------------------------------------- */
+  --canvas:      #f8f7fb;
+  --surface:     #ffffff;
+  --surface-sunk:#f3f1f8;
+  --surface-nav: #fbfafe;
+
+  /* ---- Lines ------------------------------------------------------------ */
+  --line:        #e3dfec;
+  --line-strong: #cbc4da;
+  --line-inset:  #efecf5;
+
+  /* ---- Accent ----------------------------------------------------------- */
+  --accent:        #6d4f96;
+  --accent-hover:  #583b7d;
+  --accent-soft:   #f1ebf9;
+  --accent-softer: #f8f5fc;
+  --accent-ring:   #9b7fc4;
+  --accent-ink:    #4a3268;
+
+  /* ---- Semantic --------------------------------------------------------- */
+  --added:        #a63d4d; /* PDF addition provenance */
+  --added-soft:   #fdf1f3;
+  --added-line:   #eccfd5;
+  --ok:           #3f7355;
+  --warn-ink:     #7a5c22;
+  --warn-soft:    #fdf8ec;
+  --warn-line:    #ebdcb6;
+
+  /* ---- Clinical group colours ------------------------------------------- */
+  --va:        #356874;
+  --va-soft:   #eaf3f4;
+  --dcm:       #6a4f97;
+  --dcm-soft:  #f1ecfa;
+  --hcm:       #8a6529;
+  --hcm-soft:  #faf3e6;
+  --af:        #96466f;
+  --af-soft:   #fceff5;
+  --ao:        #82591f;
+  --ao-soft:   #faf4e9;
+  --pah:       #47663a;
+  --pah-soft:  #eff5ea;
+  --lip:       #8a4a63;
+  --lip-soft:  #f9eff3;
+
+  /* ---- Space (4px rhythm) ----------------------------------------------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 56px;
+
+  /* ---- Radius ----------------------------------------------------------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  /* ---- Elevation -------------------------------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(35, 24, 55, 0.04);
+  --shadow-sm: 0 1px 3px rgba(35, 24, 55, 0.06), 0 1px 2px rgba(35, 24, 55, 0.04);
+  --shadow-md: 0 4px 12px rgba(35, 24, 55, 0.08), 0 1px 3px rgba(35, 24, 55, 0.05);
+  --shadow-lg: 0 12px 32px rgba(35, 24, 55, 0.12), 0 2px 8px rgba(35, 24, 55, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(155, 127, 196, 0.32);
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --sidebar-w: 248px;
+  --inspector-w: 396px;
+  --topbar-h: 60px;
+  --content-max: 1180px;
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease: cubic-bezier(0.32, 0.72, 0.24, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 320ms;
+}
+
+@media (max-width: 1200px) {
+  :root { --inspector-w: 360px; }
+}
+
+@media (max-width: 900px) {
+  :root { --sidebar-w: 0px; --inspector-w: 0px; }
+}
+
+/* Respect the OS preference globally. */
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; }
+}

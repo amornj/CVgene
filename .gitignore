@@ -1,0 +1,8 @@
+node_modules
+.vercel
+dist
+*.tsbuildinfo
+.DS_Store
+qa-output
+.env*
+graphify-out/

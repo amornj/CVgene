@@ -20,8 +20,15 @@
 @media(max-width:760px){.va-focus-scope{font-size:11px}.va-focus-scope summary,.va-mechanism summary{min-height:36px;font-size:11px}}
 
 
-.map-toggle-stack{display:flex;flex-direction:column;align-items:flex-start;gap:0;flex-shrink:0;min-width:145px}
+.map-toggle-stack{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:0 18px;flex-shrink:0;justify-content:flex-end}
+.map-toggle-stack>.map-highlight-toggle{order:1}
+.map-toggle-stack>.af-circle-toggle:not(.map-highlight-toggle){order:2}
+.map-toggle-stack>.phenotype-highlight-toggle{order:3}
+.map-toggle-stack>.va-subtype-select{order:4;flex-basis:100%;margin-left:auto}
+.clinical-venn-toolbar{flex-wrap:wrap}
 .map-highlight-context{flex:1;min-width:0;padding-top:5px}
+.map-highlight-context:empty{display:none}
+.map-toggle-stack{margin-left:auto}
 .map-highlight-context .va-focus-scope{margin:0;max-width:620px}
 .map-highlight-toggle[aria-pressed=true]{color:#7862ab}
 .map-highlight-toggle[aria-pressed=true] .af-toggle-track{background:#9880b8}

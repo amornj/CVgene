@@ -1,0 +1,10 @@
+graphify-out
+qa-output
+scripts
+DESIGN.md
+README.md
+.env*
+.vercel
+node_modules
+dist
+*.tsbuildinfo
